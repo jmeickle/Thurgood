@@ -17,8 +17,7 @@ projects[vertical_tabs][subdir] = "contrib"
 
 ; Jquery modules and libraries.
 projects[jquery_ui][subdir] = "contrib"
-libraries[jquery.ui][download][type] = "svn"
-libraries[jquery.ui][download][url] = "http://jquery-ui.googlecode.com/svn/tags/1.7.3/"
+libraries[jquery.ui][download][type] = "file"
+libraries[jquery.ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery-ui-1.7.3.zip"
 libraries[jquery.ui][destination] = "modules/contrib/jquery_ui"
 projects[jquery_ui_dialog][subdir] = "contrib"
-
