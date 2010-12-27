@@ -1,0 +1,20 @@
+Index: modules/taxonomy/taxonomy.admin.inc
+===================================================================
+RCS file: /cvs/drupal/drupal/modules/taxonomy/taxonomy.admin.inc,v
+retrieving revision 1.22.2.2
+diff -u -F^function -r1.22.2.2 taxonomy.admin.inc
+--- modules/taxonomy/taxonomy.admin.inc 8 Oct 2008 14:23:59 -0000       1.22.2.2
++++ modules/taxonomy/taxonomy.admin.inc 3 Jan 2009 06:28:10 -0000
+@@ -172,10 +172,8 @@ function taxonomy_form_vocabulary(&$form
+     '#default_value' => $edit['weight'],
+     '#description' => t('Vocabularies are displayed in ascending order by weight.'),
+   );
+-  // Set the hierarchy to "multiple parents" by default. This simplifies the
+-  // vocabulary form and standardizes the term form.
+   $form['hierarchy'] = array('#type' => 'value',
+-    '#value' => '0',
++    '#value' => $edit['hierarchy'],
+   );
+   // Enable "related terms" by default.
+   $form['relations'] = array('#type' => 'value',
+
