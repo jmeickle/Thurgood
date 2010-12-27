@@ -11,7 +11,7 @@ projects[custom_breadcrumbs][subdir] = "contrib"
 projects[hierarchical_select][subdir] = "contrib"
 projects[logintoboggan][subdir] = "contrib"
 projects[nrembrowser][subdir] = "contrib"
-projects[nrembrowser][version] = 1.0
+projects[nrembrowser][version] = 1.0-beta14
 projects[taxonomy_manager][subdir] = "contrib"
 projects[vertical_tabs][subdir] = "contrib"
 
