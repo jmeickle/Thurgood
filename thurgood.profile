@@ -62,10 +62,10 @@ function thurgood_profile_modules() {
     'page_title',
     'xmlsitemap',
  
-    // WYSIWYG and supporting modules and libraries.
-    'wysiwyg',
-    'imce',
-    'imce_wysiwyg',
+//    // WYSIWYG and supporting modules and libraries.
+//    'wysiwyg',
+//    'imce',
+//    'imce_wysiwyg',
  
     // Jquery UI and Jquery update needed by most sites we build.
     'jquery_ui',
