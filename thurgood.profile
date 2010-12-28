@@ -90,7 +90,7 @@ function thurgood_profile_modules() {
     'optionwidgets',
 //    'reverse_node_reference', // Installed later because it depends on db_version.
     'text',
-    'user_reference',
+    'userreference',
 
     // geo.make
     'openlayers',
