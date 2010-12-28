@@ -29,6 +29,7 @@ function thurgood_profile_modules() {
 
     // Enable optional core modules next.
 //    'comment',
+    'contact',
     'dblog',
     'help',
     'menu',
@@ -238,42 +239,42 @@ function _thurgood_system_theme_data() {
  */
 function thurgood_profile_tasks(&$task, $url) {
 
-    // First, we need to enable some modules that would break the normal install hook.
-//?  include_once('includes/install.inc'); ?
+    // First, we need to install some modules that would break the normal install hook.
     module_rebuild_cache();
     drupal_install_modules(array('strongarm', 'modalframe', 'reverse_node_reference', 'context', 'context_layouts', 'context_ui'));
 
-    // The actual settings are managed by includes:
+    // By now, all modules are installed.
+
+    // Other tasks are broken out into includes for readability:
     set_include_path('./includes');
 
-    //require(content_types.inc);
+    // Theme installation and configuring.
+    require(theme.inc)
 
-// Insert default user-defined node types into the database.
-  $types = array(
-    array(
-      'type' => 'page',
-      'name' => t('Page'),
-      'module' => 'node',
-      'description' => t('If you want to add a static page, like a contact page or an about page, use a page.'),
-      'custom' => TRUE,
-      'modified' => TRUE,
-      'locked' => FALSE,
-    ),
-  );
- 
-  foreach ($types as $type) {
-    $type = (object) _node_type_set_defaults($type);
-    node_type_save($type);
-  }
- 
-  // Default page to not be promoted and have comments disabled.
-  variable_set('node_options_page', array('status'));
-  variable_set('comment_page', COMMENT_NODE_DISABLED);
- 
-  // Don't display date and author information for page nodes by default.
-  $theme_settings = variable_get('theme_settings', array());
-  $theme_settings['toggle_node_info_page'] = FALSE;
-  variable_set('theme_settings', $theme_settings);
+    // Set various site variables, options, and settings.
+    require(variable.inc);
+
+    // Set up content types.
+    require(content_type.inc);
+
+    // Set up taxonomy.
+    require(taxonomy.inc);
+
+    // Set up roles and permissions.
+    require(permission.inc);
+
+    // Users that should be created at install.
+    require(user.inc);
+
+    // Nodes that should be created at install.
+    require(node.inc);
+
+    // Menus, now that we have everything that might
+    // create a path already set up.
+    require(menu.inc);
+
+    // Set up any Blocks and Contexts.
+    require(block.inc);
 
 /**
 function cws_d6_profile_enable_northtexas_theme() {
@@ -317,7 +318,6 @@ function cws_d6_profile_configure_blocks() {
   variable_set('vertical_tabs_minimum', '1');
   variable_set('vertical_tabs_node_type_settings', 1);
  
- 
   // Pathauto default path
   variable_set('pathauto_node_pattern', '[title-raw]');
  
@@ -336,7 +336,7 @@ function cws_d6_profile_configure_blocks() {
 }
 
 function thurgood_profile_final() {
-    //Nothing to do here!
+    // Nothing to do here, yet!
     return;
 }
 ?>
