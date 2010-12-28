@@ -52,9 +52,9 @@ function thurgood_profile_modules() {
     'content_profile',
     'content_profile_tokens',
     'content_profile_registration',
-    'context',
-    'context_layouts',
-    'context_ui',
+//    'context', // Installed later because they depend on Ctools.
+//    'context_layouts',
+//    'context_ui',
     'ctools',
     'page_manager',
     'date',
@@ -239,7 +239,7 @@ function _thurgood_system_theme_data() {
 function thurgood_profile_tasks(&$task, $url) {
 
     // First, we need to enable some modules that would break the normal install hook.
-    module_enable(array('strongarm', 'modalframe', 'reverse_node_reference'));
+    module_enable(array('strongarm', 'modalframe', 'reverse_node_reference', 'context', 'context_layouts', 'context_ui'));
 
     // The actual settings are managed by includes:
     set_include_path('./includes');
