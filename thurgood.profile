@@ -58,7 +58,7 @@ function thurgood_profile_modules() {
     'context_layouts',
     'context_ui',
     'ctools',
-    'page_manager,
+    'page_manager',
     'date',
     'date_api',
     'date_popup',
