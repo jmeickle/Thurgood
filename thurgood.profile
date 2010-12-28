@@ -39,7 +39,11 @@ function thurgood_profile_modules() {
   
     // Then, enable any contributed modules here.
 
-    // These are sorted by makefile:
+    // First Jquery:
+    'jquery_ui',
+    'jquery_ui_dialog',
+
+    // The rest are sorted by makefile:
 
     // admin.make
     'backup_migrate',
@@ -134,8 +138,6 @@ function thurgood_profile_modules() {
     'nrembrowser',
     'taxonomy_manager',
     'vertical_tabs',
-    'jquery_ui',
-    'jquery_ui_dialog',
   
     // views.make
     'views',
