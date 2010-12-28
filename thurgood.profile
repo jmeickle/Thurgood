@@ -46,7 +46,7 @@ function thurgood_profile_modules() {
     'performance',
     'googleanalytics',
     'node_import',
-    'strongarm',
+//    'strongarm', // Installed later because it depends on Ctools.
 
     // basic.make
     'content_profile',
@@ -239,7 +239,7 @@ function _thurgood_system_theme_data() {
 function thurgood_profile_tasks(&$task, $url) {
 
     // First, we need to enable some modules that would break the normal install hook.
-    module_enable(array('modalframe'));
+    module_enable(array('strongarm', 'modalframe', 'reverse_node_reference'));
 
     // The actual settings are managed by includes:
     set_include_path('./includes');
