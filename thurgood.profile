@@ -3,6 +3,8 @@
 // This installation profile is based on the work of Fuse Interactive.
 // http://fuseinteractive.ca/blog/getting-started-drupal-install-profiles
 
+// It also draws upon Open Atrium's profile.
+
 function thurgood_profile_details() {
     return array(
         'name' => 'Thurgood',
@@ -20,71 +22,131 @@ function thurgood_profile_modules() {
   return array(
     // Enable required core modules first.
     'block',
-    'comment',
-    'dblog',
     'filter',
+    'node',
+    'system',
+    'user',
+
+    // Enable optional core modules next.
+//    'comment',
+    'dblog',
     'help',
     'menu',
-    'node',
     'path',
     'search',
-    'system',
     'taxonomy',
     'upload',
-    'user',
- 
- 
+  
     // Then, enable any contributed modules here.
-    'admin',
-    'admin_menu',
-    'vertical_tabs',
- 
-    // Helper modules.
+
+    // These are sorted by makefile:
+
+    // admin.make
+    'backup_migrate',
+    'backup_migrate_files',
+    'devel',
+    'performance',
+    'googleanalytics',
+    'node_import',
+    'strongarm',
+
+    // basic.make
+    'content_profile',
+    'content_profile_tokens',
+    'content_profile_registration',
+    'context',
+    'context_layouts',
+    'context_ui',
+    'ctools',
+    'page_manager,
+    'date',
+    'date_api',
+    'date_popup',
+    'date_repeat',
+    'date_timezone',
+    'date_tools',
+    'modalframe',
     'token',
     'transliteration',
-    'advanced_help',
-    'ctools',
-    'strongarm',
-    'features',
-    'context',
-    'better_formats',
-    'backup_migrate',
-    'pngfix',
- 
-    // Image modules.
     'imageapi',
+    'imageapi_gd',
     'imagecache',
- 
-    // SEO type modules.
-    'pathauto',
-    'nodewords',
-    'nodewords_basic',
-    'page_title',
-    'xmlsitemap',
- 
-//    // WYSIWYG and supporting modules and libraries.
-//    'wysiwyg',
-//    'imce',
-//    'imce_wysiwyg',
- 
-    // Jquery UI and Jquery update needed by most sites we build.
-    'jquery_ui',
-    'jquery_ui_dialog',
- 
- 
-    // CCK and support for file and image uploads.
+    'imagecache_ui',
+    'pngfix',
+
+    // cck.make
     'content',
-    'content_permissions',
+    'content_copy',
+    'content_taxonomy',
+    'content_taxonomy_autocomplete',
+    'content_taxonomy_options',
+    'content_taxonomy_tree',
+    'email',
     'fieldgroup',
     'filefield',
     'imagefield',
+    'link',
+    'nodereference',
+    'noderelationships',
     'number',
     'optionwidgets',
+    'reverse_node_reference',
     'text',
- 
-    // Views.
+    'user_reference',
+
+    // geo.make
+    'openlayers',
+    'openlayers_cck',
+    'openlayers_ui',
+    'openlayers_views',
+
+    // (STUB) panels.make
+
+    // search.make
+    'faceted_search',
+    'faceted_search_ui',
+    'faceted_search_views',
+    'field_keyword_filter',
+    'taxonomy_facets',
+    'field_indexer',
+    'cck_field_indexer',
+    'node_field_indexer',
+    'porterstemmer',
+
+    // seo.make
+//    'nodewords_admin',
+//    'nodewords_basic',
+//    'nodewords',
+    'pathauto',
+    'page_title',
+//    'xmlsitemap',
+
+    // ui.make
+    'admin',
+    'admin_menu',
+    'advanced_help',
+    'better_formats',
+    'custom_breadcrumbs',
+    'hierarchical_select',
+    'hs_content_taxonomy',
+    'hs_taxonomy',
+    'logintoboggan',
+    'nrembrowser',
+    'taxonomy_manager',
+    'vertical_tabs',
+    'jquery_ui',
+    'jquery_ui_dialog',
+  
+    // views.make
     'views',
+    'views_customfield',
+    'views_export',
+    'views_or',
     'views_ui',
+    'views_rss',
+
+    // (STUB) workflow.make
+    // (STUB) wysiwyg.make
   );
 }
  
@@ -177,7 +239,12 @@ function _thurgood_system_theme_data() {
  * Implementation of hook_profile_tasks().
  */
 function thurgood_profile_tasks(&$task, $url) {
-  // Insert default user-defined node types into the database.
+
+set_include_path('./includes');
+
+//require(content_types.inc);
+
+// Insert default user-defined node types into the database.
   $types = array(
     array(
       'type' => 'page',
@@ -203,10 +270,25 @@ function thurgood_profile_tasks(&$task, $url) {
   $theme_settings = variable_get('theme_settings', array());
   $theme_settings['toggle_node_info_page'] = FALSE;
   variable_set('theme_settings', $theme_settings);
+
+/**
+function cws_d6_profile_enable_northtexas_theme() {
+  install_disable_theme('garland');
+  install_default_theme('northtexas');
+}
+
+function cws_d6_profile_configure_blocks() {
+  install_init_blocks();
  
+  $body = 'University of North Texas<br />1155 Union Circle #311277<br />Denton, Texas';
+  $description = 'Physical Address';
+  $physadd_delta = install_create_custom_block($body, $description);
+  install_set_block('block', $physadd_delta, 'northtexas', 'physicaladd', 0);
+}
+**/ 
   // Clear caches.
   drupal_flush_all_caches();
- 
+/**
   // Enable the right theme. This must be handled after drupal_flush_all_caches()
   // which rebuilds the system table based on a stale static cache,
   // blowing away our changes.
@@ -218,11 +300,10 @@ function thurgood_profile_tasks(&$task, $url) {
   variable_set('theme_default', 'fusebasic');
   variable_set('admin_theme', 'rubik');
   variable_set('node_admin_theme', 1);
- 
+**/ 
   // Set default WYSIWYG settings
   db_query('INSERT INTO {wysiwyg} VALUES (1,\'\',NULL),(2,\'ckeditor\',\'a:20:{s:7:"default";i:1;s:11:"user_choose";i:0;s:11:"show_toggle";i:1;s:5:"theme";s:8:"advanced";s:8:"language";s:2:"en";s:7:"buttons";a:2:{s:7:"default";a:2:{s:4:"Bold";i:1;s:5:"Image";i:1;}s:4:"imce";a:1:{s:4:"imce";i:1;}}s:11:"toolbar_loc";s:3:"top";s:13:"toolbar_align";s:4:"left";s:8:"path_loc";s:6:"bottom";s:8:"resizing";i:1;s:11:"verify_html";i:1;s:12:"preformatted";i:0;s:22:"convert_fonts_to_spans";i:1;s:17:"remove_linebreaks";i:1;s:23:"apply_source_formatting";i:0;s:27:"paste_auto_cleanup_on_paste";i:0;s:13:"block_formats";s:32:"p,address,pre,h2,h3,h4,h5,h6,div";s:11:"css_setting";s:5:"theme";s:8:"css_path";s:0:"";s:11:"css_classes";s:0:"";}\')');
- 
- 
+  
   // Set default input format to Full HTML
   variable_set('filter_default_format', '2');
  
@@ -247,5 +328,10 @@ function thurgood_profile_tasks(&$task, $url) {
  
   // Allow editor role to use admin bar + other default editor permissions
   db_query("INSERT INTO {permission} (rid, perm, tid) VALUES (3, 'use admin toolbar, collapse format fieldset by default, collapsible format selection, show format selection for blocks, show format selection for comments, show format selection for nodes, show format tips, show more format tips link, administer blocks, access comments, administer comments, post comments, post comments without approval, access content, administer nodes, create page content, delete any page content, delete own page content, delete revisions, edit any page content, edit own page content, revert revisions, view revisions, search content, view uploaded files, administer users',0)");
+}
+
+function thurgood_profile_final() {
+    //Nothing to do here!
+    return;
 }
 ?>
