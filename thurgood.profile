@@ -37,13 +37,7 @@ function thurgood_profile_modules() {
     'taxonomy',
     'upload',
   
-    // Then, enable any contributed modules here.
-
-    // First Jquery:
-    'jquery_ui',
-    'jquery_ui_dialog',
-
-    // The rest are sorted by makefile:
+    // The rest are contrib modules, sorted by makefile:
 
     // admin.make
     'backup_migrate',
@@ -69,7 +63,7 @@ function thurgood_profile_modules() {
     'date_repeat',
     'date_timezone',
     'date_tools',
-    'modalframe',
+//    'modalframe', // Installed later because it depends on Jquery.
     'token',
     'transliteration',
     'imageapi',
@@ -138,7 +132,9 @@ function thurgood_profile_modules() {
     'nrembrowser',
     'taxonomy_manager',
     'vertical_tabs',
-  
+    'jquery_ui',
+    'jquery_ui_dialog',
+
     // views.make
     'views',
     'views_customfield',
@@ -242,9 +238,13 @@ function _thurgood_system_theme_data() {
  */
 function thurgood_profile_tasks(&$task, $url) {
 
-set_include_path('./includes');
+    // First, we need to enable some modules that would break the normal install hook.
+    module_enable(array('modalframe'));
 
-//require(content_types.inc);
+    // The actual settings are managed by includes:
+    set_include_path('./includes');
+
+    //require(content_types.inc);
 
 // Insert default user-defined node types into the database.
   $types = array(
