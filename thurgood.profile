@@ -88,7 +88,7 @@ function thurgood_profile_modules() {
     'noderelationships',
     'number',
     'optionwidgets',
-    'reverse_node_reference',
+//    'reverse_node_reference', // Installed later because it depends on db_version.
     'text',
     'user_reference',
 
