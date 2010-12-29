@@ -44,4 +44,4 @@ includes[views] = "makefiles/views.make"
 
 ; hierarchy field in vocabulary table resets to 0 when editing vocabulary
 ; http://drupal.org/node/580040
-projects[drupal][patch][][url] = "http://drupal.org/files/issues/taxonomy-hierarchy-580040_0.patch"
+projects[drupal][patch][] = "http://drupal.org/files/issues/taxonomy-hierarchy-580040_0.patch"
