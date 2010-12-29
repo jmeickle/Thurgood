@@ -276,53 +276,8 @@ function thurgood_profile_tasks(&$task, $url) {
     // Set up any Blocks and Contexts.
     require(block.inc);
 
-/**
-function cws_d6_profile_enable_northtexas_theme() {
-  install_disable_theme('garland');
-  install_default_theme('northtexas');
-}
-
-function cws_d6_profile_configure_blocks() {
-  install_init_blocks();
- 
-  $body = 'University of North Texas<br />1155 Union Circle #311277<br />Denton, Texas';
-  $description = 'Physical Address';
-  $physadd_delta = install_create_custom_block($body, $description);
-  install_set_block('block', $physadd_delta, 'northtexas', 'physicaladd', 0);
-}
-**/ 
-  // Clear caches.
-  drupal_flush_all_caches();
-/**
-  // Enable the right theme. This must be handled after drupal_flush_all_caches()
-  // which rebuilds the system table based on a stale static cache,
-  // blowing away our changes.
-  _thurgood_system_theme_data();
-  db_query("UPDATE {system} SET status = 0 WHERE type = 'theme'");
-  db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' AND name = 'fusebasic'");
-  db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' AND name = 'rubik'");
-  db_query("UPDATE {blocks} SET region = '' WHERE theme = 'fusebasic'");
-  variable_set('theme_default', 'fusebasic');
-  variable_set('admin_theme', 'rubik');
-  variable_set('node_admin_theme', 1);
-**/ 
-/**
-  // Set default WYSIWYG settings
-  db_query('INSERT INTO {wysiwyg} VALUES (1,\'\',NULL),(2,\'ckeditor\',\'a:20:{s:7:"default";i:1;s:11:"user_choose";i:0;s:11:"show_toggle";i:1;s:5:"theme";s:8:"advanced";s:8:"language";s:2:"en";s:7:"buttons";a:2:{s:7:"default";a:2:{s:4:"Bold";i:1;s:5:"Image";i:1;}s:4:"imce";a:1:{s:4:"imce";i:1;}}s:11:"toolbar_loc";s:3:"top";s:13:"toolbar_align";s:4:"left";s:8:"path_loc";s:6:"bottom";s:8:"resizing";i:1;s:11:"verify_html";i:1;s:12:"preformatted";i:0;s:22:"convert_fonts_to_spans";i:1;s:17:"remove_linebreaks";i:1;s:23:"apply_source_formatting";i:0;s:27:"paste_auto_cleanup_on_paste";i:0;s:13:"block_formats";s:32:"p,address,pre,h2,h3,h4,h5,h6,div";s:11:"css_setting";s:5:"theme";s:8:"css_path";s:0:"";s:11:"css_classes";s:0:"";}\')');
-**/
- 
-  // Make an 'editor' role
-  db_query("INSERT INTO {role} (rid, name) VALUES (3, 'editor')");
- 
-  // Change anonymous user's permissions - this is UPDATE rather than INSERT
-  db_query("UPDATE {permission} SET perm = 'access comments, can send feedback, access content, search content, view uploaded files' WHERE rid = 1");
- 
-  // Change authenticated user's permissions - this is UPDATE rather than INSERT
-  db_query("UPDATE {permission} SET perm = CONCAT(perm, ', search content, view uploaded files') WHERE rid = 2");
- 
- 
-  // Allow editor role to use admin bar + other default editor permissions
-  db_query("INSERT INTO {permission} (rid, perm, tid) VALUES (3, 'use admin toolbar, collapse format fieldset by default, collapsible format selection, show format selection for blocks, show format selection for comments, show format selection for nodes, show format tips, show more format tips link, administer blocks, access comments, administer comments, post comments, post comments without approval, access content, administer nodes, create page content, delete any page content, delete own page content, delete revisions, edit any page content, edit own page content, revert revisions, view revisions, search content, view uploaded files, administer users',0)");
+    // We're done! Clear caches.
+    drupal_flush_all_caches();
 }
 
 function thurgood_profile_final() {
