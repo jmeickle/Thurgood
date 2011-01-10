@@ -254,7 +254,7 @@ function thurgood_profile_tasks(&$task, $url) {
     set_include_path('./includes');
 
     // Theme installation and configuring.
-    require(theme.inc)
+    require(theme.inc);
 
     // Set various site variables, options, and settings.
     require(variable.inc);
