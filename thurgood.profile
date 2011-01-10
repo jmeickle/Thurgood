@@ -148,6 +148,9 @@ function thurgood_profile_modules() {
 
     // (STUB) workflow.make
     // (STUB) wysiwyg.make
+
+    // features.make
+    'openlayers_map',
   );
 }
  
