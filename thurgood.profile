@@ -64,6 +64,7 @@ function thurgood_profile_modules() {
     'date_repeat',
     'date_timezone',
     'date_tools',
+    'features',
 //    'modalframe', // Installed later because it depends on Jquery.
     'token',
     'transliteration',

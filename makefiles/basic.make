@@ -7,6 +7,7 @@ core = 6.x
 ; Site structure modules
 projects[content_profile][subdir] = "contrib"
 projects[context][subdir] = "contrib"
+projects[features][subdir] = "contrib"
 
 ; API modules
 projects[ctools][subdir] = "contrib"
