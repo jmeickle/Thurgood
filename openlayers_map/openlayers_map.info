@@ -1,0 +1,7 @@
+core = "6.x"
+dependencies[] = "openlayers"
+description = "Openlayers map test."
+features[ctools][] = "openlayers:openlayers_presets:1"
+features[openlayers_map_presets][] = "reentry_map"
+name = "OpenLayers Map"
+package = "Features"
