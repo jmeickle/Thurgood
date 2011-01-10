@@ -40,6 +40,9 @@ includes[views] = "makefiles/views.make"
 ; (STUB) WYSIWYG modules.
 ;includes[wysiwyg] = "makefiles/wysiwyg.make"
 
+; Features modules:
+includes[features] = "makefiles/features.make"
+
 ; Patches:
 
 ; hierarchy field in vocabulary table resets to 0 when editing vocabulary
