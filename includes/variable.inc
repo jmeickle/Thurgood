@@ -44,10 +44,10 @@ variable_set('contact_default_status', 1);
 variable_set('contact_hourly_threshold', 3);
 
 $contact_info = array (
-    array("cid" => 1, "category" => "Feedback about site", "recipients" => "eronarn@gmail.com", "reply" = '', "weight" = 0, "selected" = 1),
-    array("cid" => 2, "category" => "Help with using the site", "recipients" => "eronarn@gmail.com", "reply" = '', "weight" = 0, "selected" = 0),
-    array("cid" => 3, "category" => "Wrong information on site", "recipients" => "eronarn@gmail.com", "reply" = '', "weight" = 0, "selected" = 0),
-    array("cid" => 4, "category" => "Request for further information", "recipients" => "eronarn@gmail.com", "reply" = '', "weight" = 0, "selected" = 0),
+    array("cid" => 1, "category" => "Feedback about site", "recipients" => "eronarn@gmail.com", "reply" => '', "weight" => 0, "selected" => 1),
+    array("cid" => 2, "category" => "Help with using the site", "recipients" => "eronarn@gmail.com", "reply" => '', "weight" => 0, "selected" => 0),
+    array("cid" => 3, "category" => "Wrong information on site", "recipients" => "eronarn@gmail.com", "reply" => '', "weight" => 0, "selected" => 0),
+    array("cid" => 4, "category" => "Request for further information", "recipients" => "eronarn@gmail.com", "reply" => '', "weight" => 0, "selected" => 0),
 );
 
 foreach ($contact_info as $values) {
