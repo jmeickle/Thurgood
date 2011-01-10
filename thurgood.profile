@@ -98,6 +98,7 @@ function thurgood_profile_modules() {
     'openlayers_cck',
     'openlayers_ui',
     'openlayers_views',
+    'openlayers_geocoder',
 
     // (STUB) panels.make
 
