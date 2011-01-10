@@ -5,7 +5,7 @@
       'type' => 'page',
       'name' => t('Page'),
       'module' => 'node',
-      'description' => t('If you want to add a static page, like a contact page$
+      'description' => t('If you want to add a static page, like a contact page'),
       'custom' => TRUE,
       'modified' => TRUE,
       'locked' => FALSE,
