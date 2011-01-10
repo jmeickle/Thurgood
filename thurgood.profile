@@ -254,32 +254,32 @@ function thurgood_profile_tasks(&$task, $url) {
     set_include_path('./includes');
 
     // Theme installation and configuring.
-    require(theme.inc);
+    require("theme.inc");
 
     // Set various site variables, options, and settings.
-    require(variable.inc);
+    require("variable.inc");
 
     // Set up content types.
-    require(content_type.inc);
+    require("content_type.inc");
 
     // Set up taxonomy.
-    require(taxonomy.inc);
+    require("taxonomy.inc");
 
     // Set up roles and permissions.
-    require(permission.inc);
+    require("permission.inc");
 
     // Users that should be created at install.
-    require(user.inc);
+    require("user.inc");
 
     // Nodes that should be created at install.
-    require(node.inc);
+    require("node.inc");
 
     // Menus, now that we have everything that might
     // create a path already set up.
-    require(menu.inc);
+    require("menu.inc");
 
     // Set up any Blocks and Contexts.
-    require(block.inc);
+    require("block.inc");
 
     // We're done! Clear caches.
     drupal_flush_all_caches();
