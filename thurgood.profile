@@ -251,7 +251,7 @@ function thurgood_profile_tasks(&$task, $url) {
     // By now, all modules are installed.
 
     // Other tasks are broken out into includes for readability:
-    set_include_path('./includes');
+    set_include_path(dirname(__FILE__) . DIRECTORY_SEPARATOR . '/includes');
 
     // Theme installation and configuring.
     require("theme.inc");
