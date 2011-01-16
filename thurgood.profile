@@ -156,7 +156,7 @@ function thurgood_profile_modules() {
     // (STUB) wysiwyg.make
 
     // features.make
-    'openlayers_map',
+    'thurgood_test',
   );
 }
  

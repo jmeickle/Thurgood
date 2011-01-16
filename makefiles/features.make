@@ -3,7 +3,7 @@
 api = 2
 core = 6.x
 
-projects[openlayers_map][type] = "module"
-projects[openlayers_map][subdir] = "custom"
-projects[openlayers_map][download][type] = "git"
-projects[openlayers_map][download][url] = "git://github.com/Eronarn/Thurgood.git"
+projects[thurgood_test][type] = "module"
+projects[thurgood_test][subdir] = "custom"
+projects[thurgood_test][download][type] = "git"
+projects[thurgood_test][download][url] = "git://github.com/Eronarn/Thurgood.git"
