@@ -10,10 +10,12 @@ projects[better_formats][subdir] = "contrib"
 projects[custom_breadcrumbs][subdir] = "contrib"
 projects[hierarchical_select][subdir] = "contrib"
 projects[logintoboggan][subdir] = "contrib"
+projects[node_clone][subdir] = "contrib"
 projects[nrembrowser][subdir] = "contrib"
 projects[nrembrowser][version] = 1.0-beta14
 projects[taxonomy_manager][subdir] = "contrib"
 projects[vertical_tabs][subdir] = "contrib"
+projects[vt_default][subdir] = "contrib"
 
 ; Jquery modules and libraries.
 projects[jquery_ui][subdir] = "contrib"

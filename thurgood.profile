@@ -75,6 +75,7 @@ function thurgood_profile_modules() {
     'pngfix',
 
     // cck.make
+    'conditional_fields',
     'content',
     'content_copy',
     'content_taxonomy',
@@ -86,9 +87,11 @@ function thurgood_profile_modules() {
     'filefield',
     'imagefield',
     'link',
+    'phone',
     'nodereference',
     'noderelationships',
     'number',
+    'office_hours',
     'optionwidgets',
 //    'reverse_node_reference', // Installed later because it depends on db_version.
     'text',
@@ -132,9 +135,12 @@ function thurgood_profile_modules() {
     'hs_content_taxonomy',
     'hs_taxonomy',
     'logintoboggan',
+    'node_clone',
     'nrembrowser',
     'taxonomy_manager',
     'vertical_tabs',
+    'vt_default',
+
     'jquery_ui',
     'jquery_ui_dialog',
 
