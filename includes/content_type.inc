@@ -17,9 +17,9 @@
 **/
 
   // Vertical Tabs Default settings
-  variable_set('vertical_tabs_default_tab_article, "Article");
-  variable_set('vertical_tabs_default_tab_event, "Event");
-  variable_set('vertical_tabs_default_tab_place, "Place");
+  variable_set('vertical_tabs_default_tab_article', "Article");
+  variable_set('vertical_tabs_default_tab_event', "Event");
+  variable_set('vertical_tabs_default_tab_place', "Place");
 
   // Don't display date and author information for these:
   $theme_settings = variable_get('theme_settings', array());
