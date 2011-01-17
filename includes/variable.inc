@@ -14,6 +14,31 @@ variable_set('default_nodes_main', "5");
 variable_set('node_preview', "0");
 variable_set('teaser_length', "200");
 
+// Having the Search region active breaks OL Geocoder,
+// so we disable it here.
+
+variable_set('theme_settings', array(
+    'toggle_logo' => 1,
+    'toggle_name' => 1,
+    'toggle_slogan' => 0,
+    'toggle_mission' => 1,
+    'toggle_node_user_picture' => 0,
+    'toggle_comment_user_picture' => 0,
+    'toggle_search' => 0,
+    'toggle_favicon' => 1,
+    'toggle_primary_links' => 1,
+    'toggle_secondary_links' => 1,
+    'toggle_node_info_article' => 0,
+    'toggle_node_info_event' => 0,
+    'toggle_node_info_place' => 0,
+    'default_logo' => 1,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+);
+
 // OpenLayers settings.
 // Default preset is the same one used on the node editing page.
 variable_set('openlayers_default_preset', 'thurgood_form');
