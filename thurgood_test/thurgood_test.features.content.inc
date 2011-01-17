@@ -1370,7 +1370,7 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'openlayers_map_reentry_map',
+        'format' => 'thurgood_node',
         'exclude' => 0,
       ),
       '4' => array(
@@ -1402,7 +1402,7 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
       'polygon' => 0,
     ),
     'widget' => array(
-      'openlayers_cck_preset_map' => 'default',
+      'openlayers_cck_preset_map' => 'thurgood_form',
       'openlayers_behaviors' => array(
         'openlayers_behavior_zoomtolayer' => array(
           'enabled' => 1,
@@ -1418,10 +1418,6 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
         ),
       ),
       'default_value_php' => NULL,
-      'autocompletion_field_hourdesc_enable' => 1,
-      'autocompletion_field_hourdesc_override' => 0,
-      'autocompletion_field_hourdesc_content' => '[formatted_address]',
-      'autocompletion_field_hourdesc_type' => 'input',
       'keep_points' => 0,
       'position' => '-10',
       'autocompletion_field_location_address_enable' => 1,
@@ -1686,7 +1682,7 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
     'allowed_values_php' => '',
     'widget' => array(
       'rows' => 5,
-      'size' => '2',
+      'size' => '40',
       'default_value' => array(
         '0' => array(
           'value' => '',
@@ -1748,7 +1744,7 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
     'allowed_values_php' => '',
     'widget' => array(
       'rows' => 5,
-      'size' => '5',
+      'size' => '40',
       'default_value' => array(
         '0' => array(
           'value' => '',
