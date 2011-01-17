@@ -8,6 +8,9 @@ function thurgood_test_ctools_plugin_api() {
   if ($module == "openlayers" && $api == "openlayers_presets") {
     return array("version" => 1);
   }
+  elseif ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => 1);
+  }
 }
 
 /**
@@ -50,4 +53,13 @@ function thurgood_test_node_info() {
     ),
   );
   return $items;
+}
+
+/**
+ * Implementation of hook_views_api().
+ */
+function thurgood_test_views_api() {
+  return array(
+    'api' => '2',
+  );
 }

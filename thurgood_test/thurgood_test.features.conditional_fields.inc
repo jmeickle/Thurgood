@@ -7,25 +7,7 @@ function thurgood_test_conditional_fields_default_fields() {
 $items = array();
 $items[] = array (
   'control_field_name' => 'field_toggle_location',
-  'field_name' => 'field_location_state',
-  'type' => 'event',
-  'trigger_values' => 
-  array (
-    1 => '1',
-  ),
-);
-$items[] = array (
-  'control_field_name' => 'field_toggle_location',
-  'field_name' => 'field_location_city',
-  'type' => 'event',
-  'trigger_values' => 
-  array (
-    1 => '1',
-  ),
-);
-$items[] = array (
-  'control_field_name' => 'field_toggle_location',
-  'field_name' => 'field_location_additional',
+  'field_name' => 'field_location',
   'type' => 'event',
   'trigger_values' => 
   array (
@@ -43,7 +25,25 @@ $items[] = array (
 );
 $items[] = array (
   'control_field_name' => 'field_toggle_location',
-  'field_name' => 'field_location',
+  'field_name' => 'field_location_additional',
+  'type' => 'event',
+  'trigger_values' => 
+  array (
+    1 => '1',
+  ),
+);
+$items[] = array (
+  'control_field_name' => 'field_toggle_location',
+  'field_name' => 'field_location_city',
+  'type' => 'event',
+  'trigger_values' => 
+  array (
+    1 => '1',
+  ),
+);
+$items[] = array (
+  'control_field_name' => 'field_toggle_location',
+  'field_name' => 'field_location_state',
   'type' => 'event',
   'trigger_values' => 
   array (

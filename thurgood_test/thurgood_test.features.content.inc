@@ -104,7 +104,7 @@ function thurgood_test_content_default_fields() {
     'module' => 'email',
     'active' => '1',
     'widget' => array(
-      'size' => '60',
+      'size' => '40',
       'default_value' => array(
         '0' => array(
           'email' => '',
@@ -163,7 +163,7 @@ function thurgood_test_content_default_fields() {
     'ca_phone_separator' => '-',
     'ca_phone_parentheses' => 1,
     'widget' => array(
-      'size' => '60',
+      'size' => '40',
       'default_value' => array(
         '0' => array(
           'value' => '',
@@ -499,14 +499,14 @@ function thurgood_test_content_default_fields() {
           ),
         ),
       ),
+      'keep_points' => 0,
+      'position' => '-10',
       'default_value' => array(
         '0' => array(
           'openlayers_wkt' => '',
         ),
       ),
       'default_value_php' => NULL,
-      'keep_points' => 0,
-      'position' => '-10',
       'autocompletion_field_location_address_enable' => 1,
       'autocompletion_field_location_address_override' => 1,
       'autocompletion_field_location_address_content' => '[street_number] [route]',
@@ -888,7 +888,7 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
     'module' => 'email',
     'active' => '1',
     'widget' => array(
-      'size' => '60',
+      'size' => '40',
       'default_value' => array(
         '0' => array(
           'email' => '',
@@ -1408,14 +1408,14 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
           ),
         ),
       ),
+      'keep_points' => 0,
+      'position' => '-10',
       'default_value' => array(
         '0' => array(
           'openlayers_wkt' => '',
         ),
       ),
       'default_value_php' => NULL,
-      'keep_points' => 0,
-      'position' => '-10',
       'autocompletion_field_location_address_enable' => 1,
       'autocompletion_field_location_address_override' => 1,
       'autocompletion_field_location_address_content' => '[street_number] [route]',
@@ -1492,7 +1492,7 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
     'allowed_values_php' => '',
     'widget' => array(
       'rows' => 5,
-      'size' => '80',
+      'size' => '40',
       'default_value' => array(
         '0' => array(
           'value' => '',
@@ -1616,7 +1616,7 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
     'allowed_values_php' => '',
     'widget' => array(
       'rows' => 5,
-      'size' => '20',
+      'size' => '40',
       'default_value' => array(
         '0' => array(
           'value' => '',
@@ -1797,7 +1797,7 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
     'module' => 'email',
     'active' => '1',
     'widget' => array(
-      'size' => '60',
+      'size' => '40',
       'default_value' => array(
         '0' => array(
           'email' => '',
@@ -1918,7 +1918,7 @@ If there are no matches, or the match is inaccurate, you can draw a new point on
     'ca_phone_separator' => '-',
     'ca_phone_parentheses' => 1,
     'widget' => array(
-      'size' => '60',
+      'size' => '40',
       'default_value' => array(
         '0' => array(
           'value' => '',

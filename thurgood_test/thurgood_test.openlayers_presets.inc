@@ -165,5 +165,66 @@ function thurgood_test_openlayers_presets() {
   );
 
   $export['thurgood_search'] = $openlayers_presets;
+  $openlayers_presets = new stdClass;
+  $openlayers_presets->disabled = FALSE; /* Edit this to true to make a default openlayers_presets disabled initially */
+  $openlayers_presets->api_version = 1;
+  $openlayers_presets->name = 'thurgood_search_2';
+  $openlayers_presets->title = 'Thurgood: Faceted Search Map Test';
+  $openlayers_presets->description = 'Map displayed when searching.';
+  $openlayers_presets->data = array(
+    'width' => 'auto',
+    'height' => '500px',
+    'image_path' => '',
+    'css_path' => '',
+    'proxy_host' => '',
+    'hide_empty_map' => 0,
+    'center' => array(
+      'initial' => array(
+        'centerpoint' => '-72.726745602562, 41.6154423233',
+        'zoom' => '8',
+      ),
+      'restrict' => array(
+        'restrictextent' => 0,
+        'restrictedExtent' => '-8221261.012767,5005708.107441,-7977274.018525,5175704.058317',
+      ),
+    ),
+    'behaviors' => array(
+      'openlayers_behavior_popup' => array(
+        'layers' => array(
+          'thurgood_search_data_openlayers_1' => 'thurgood_search_data_openlayers_1',
+        ),
+      ),
+      'openlayers_behavior_keyboarddefaults' => array(),
+      'openlayers_behavior_mouseposition' => array(),
+      'openlayers_behavior_navigation' => array(
+        'zoomWheelEnabled' => 1,
+      ),
+      'openlayers_behavior_scaleline' => array(),
+      'openlayers_behavior_zoompanel' => array(),
+      'openlayers_behavior_zoomtolayer' => array(
+        'zoomtolayer' => 'thurgood_search_data_openlayers_1',
+        'point_zoom_level' => '5',
+      ),
+    ),
+    'default_layer' => 'google_normal',
+    'layers' => array(
+      'google_normal' => 'google_normal',
+      'thurgood_search_data_openlayers_1' => 'thurgood_search_data_openlayers_1',
+    ),
+    'layer_styles' => array(),
+    'layer_activated' => array(
+      'thurgood_search_data_openlayers_1' => 'thurgood_search_data_openlayers_1',
+    ),
+    'layer_switcher' => array(),
+    'projection' => '900913',
+    'displayProjection' => '4326',
+    'styles' => array(
+      'default' => 'default',
+      'select' => 'default',
+      'temporary' => 'default',
+    ),
+  );
+
+  $export['thurgood_search_2'] = $openlayers_presets;
   return $export;
 }
