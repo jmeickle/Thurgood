@@ -40,9 +40,6 @@ variable_set('image_toolkit', "gd");
 // Search settings.
 variable_set('search_cron_limit', 300);
 
-// Input filter settings
-variable_set('filter_default_format', 2);
-
 // Admin settings
 variable_set('admin_toolbar', array(
 
