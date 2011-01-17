@@ -1,7 +1,6 @@
 <?php
 
 // Basic site information
-
 variable_set('site_footer', 'Developed by the Institute for Municipal and Regional Policy at Central Connecticut State University.');
 variable_set('site_frontpage', 'home');
 variable_set('site_mail', 'eronarn@gmail.com');
@@ -9,6 +8,16 @@ variable_set('site_mission', 'Welcome to the test page of the Connecticut Reentr
 variable_set('site_name', 'Connecticut Reentry Collaborative');
 variable_set('site_offline_message', 'The Connecticut Reentry Collaborative test page is currently offline.');
 variable_set('site_slogan', 'If we had a slogan it would go here.');
+
+// OpenLayers settings.
+// Default preset is the same one used on the node editing page.
+variable_set('openlayers_default_preset', 'thurgood_form');
+
+// Obviously, this depends on your domain!
+variable_set('openlayers_layers_google_api', 'ABQIAAAAYxy6rrenR0GtIuGHI9I35BS31JS7lLTyVkZkrmJvmWOn6proUxQh9Z_wcnDGfs4-wuC02ZFkd997uQ');
+
+// Not currently used.
+// variable_set(' ', 'http://ctreentry.info/OpenLayers.js');
 
 // Date settings
 variable_set('date_db_tz_support', 0);
@@ -24,15 +33,15 @@ variable_set('imageapi_image_toolkit', "imageapi_gd");
 variable_set('image_toolkit', "gd");
 
 // Search settings.
-variable_set('search_cron_limit', "100");
+variable_set('search_cron_limit', 300);
 
 // Input filter settings
-variable_set('filter_default_format', '2');
+variable_set('filter_default_format', 2);
 
 // Vertical Tabs settings
 variable_set('vertical_tabs_default', 1);
-variable_set('vertical_tabs_minimum', '1');
-variable_set('vertical_tabs_node_type_settings', 1);
+variable_set('vertical_tabs_minimum', 1);
+variable_set('vertical_tabs_node_type_settings', 0);
 
 // Pathauto settings
 // Default:
