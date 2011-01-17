@@ -9,6 +9,11 @@ variable_set('site_name', 'Connecticut Reentry Collaborative');
 variable_set('site_offline_message', 'The Connecticut Reentry Collaborative test page is currently offline.');
 variable_set('site_slogan', 'If we had a slogan it would go here.');
 
+// Core settings.
+variable_set('default_nodes_main', "5");
+variable_set('node_preview', "0");
+variable_set('teaser_length', "200");
+
 // OpenLayers settings.
 // Default preset is the same one used on the node editing page.
 variable_set('openlayers_default_preset', 'thurgood_form');
