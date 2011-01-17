@@ -40,9 +40,53 @@ variable_set('image_toolkit', "gd");
 // Search settings.
 variable_set('search_cron_limit', 300);
 
+// Faceted Search environment settings.
+$fs_env_settings = serialize(array(
+    'title' => 'Resource Search',
+    'ignore_status' => 1,
+    'types' => array
+        (
+            'place' => 'place',
+            'article' => 0,
+            'event' => 0
+        ),
+    'base_path' => 'search',
+    'start_page' => 'search/results',
+    'results_style => 'faceted_search_views:thurgood_search_map',
+    'results_style_selective_extracts' => 0,
+    'current_block' => 1,
+    'keyword_block' => 1,
+    'keyword_mode' => 'refine',
+    'keyword_field_selector' => 0,
+    'guided_block' => 1,
+    'sort_block' => 0,
+    'tooltips' => 1,
+    'related_block' => 1,
+    'related_style' => 'list_grouped'
+));
+
+$fs_env_query = "
+INSERT INTO `faceted_search_env` (`env_id`, `name`, `description`, `settings`) VALUES
+(1, 'thurgood_search_environment', 'Thurgood: Search Environment', '" . $fs_env_settings . "')
+";
+
+// Faceted Search filters settings.
+
+$fs_filters_query = "
+INSERT INTO `faceted_search_filters` (`env_id`, `filter_key`, `filter_id`, `status`, `weight`, `sort`, `max_categories`) VALUES
+(1, 'node', 'keyword', 1, -999, '', 0),
+(1, 'taxonomy', '1', 1, 2, 'term', 0),
+(1, 'taxonomy', '2', 1, 1, 'term', 0),
+(1, 'taxonomy', '3', 1, 3, 'term', 0)
+";
+
+// Queries to insert the above.
+db_query($fs_env_query);
+db_query($fs_filters_query);
+
 // Admin settings
 variable_set('admin_toolbar', array(
-    'layout' => "vertical",
+    'layout' => "horizontal",
     'position' => "sw",
     'behavior' => "df",
     'blocks' => array
