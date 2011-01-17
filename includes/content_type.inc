@@ -1,4 +1,5 @@
 <?php
+/**
 // Insert default user-defined node types into the database.
   $types = array(
     array(
@@ -27,12 +28,17 @@
     $type = (object) _node_type_set_defaults($type);
     node_type_save($type);
   }
+**/
 
-  // Default page to not be promoted.
-  variable_set('node_options_page', array('status'));
+  // Default these to not be promoted:
+  variable_set('node_options_article', array('status'));
+  variable_set('node_options_event', array('status'));
+  variable_set('node_options_place', array('status'));
 
-  // Don't display date and author information for page nodes by default.
+  // Don't display date and author information for these:
   $theme_settings = variable_get('theme_settings', array());
-  $theme_settings['toggle_node_info_page'] = FALSE;
+  $theme_settings['toggle_node_info_article'] = FALSE;
+  $theme_settings['toggle_node_info_event'] = FALSE;
+  $theme_settings['toggle_node_info_place'] = FALSE;
   variable_set('theme_settings', $theme_settings);
 ?>
