@@ -42,17 +42,17 @@ variable_set('search_cron_limit', 300);
 
 // Admin settings
 variable_set('admin_toolbar', array(
-    'layout' => "vertical"
-    'position' => "sw"
-    'behavior' => "df"
+    'layout' => "vertical",
+    'position' => "sw",
+    'behavior' => "df",
     'blocks' => array
         (
-            'context_ui-editor' => -1
-            'context_ui-devel' => -1
-            'admin-create' => -1
-            'admin-theme' => 1
-            'admin-account' => -1
-            'admin-menu' => 1
+            'context_ui-editor' => -1,
+            'context_ui-devel' => -1,
+            'admin-create' => -1,
+            'admin-theme' => 1,
+            'admin-account' => -1,
+            'admin-menu' => 1,
             'admin-devel' => -1
         )
 
