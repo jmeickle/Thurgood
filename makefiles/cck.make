@@ -4,7 +4,7 @@ api = 2
 core = 6.x
 
 projects[cck][subdir] = "contrib"
-projects[conditional_fields] = "contrib"
+projects[conditional_fields][subdir] = "contrib"
 projects[content_taxonomy][subdir] = "contrib"
 projects[email][subdir] = "contrib"
 projects[filefield][subdir] = "contrib"
