@@ -43,7 +43,26 @@ variable_set('search_cron_limit', 300);
 // Input filter settings
 variable_set('filter_default_format', 2);
 
-// Admin Menu settings.
+// Admin settings
+variable_set('admin_toolbar', array(
+
+    [layout] => vertical
+    [position] => sw
+    [behavior] => df
+    [blocks] => array
+        (
+            [context_ui-editor] => -1
+            [context_ui-devel] => -1
+            [admin-create] => -1
+            [admin-theme] => 1
+            [admin-account] => -1
+            [admin-menu] => 1
+            [admin-devel] => -1
+        )
+
+));
+
+// Admin Menu settings
 variable_set('admin_menu_margin_top', 1);
 variable_set('admin_menu_position_fixed', 1);
 variable_set('admin_menu_tweak_modules', 1);
