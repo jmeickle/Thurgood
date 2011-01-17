@@ -36,7 +36,6 @@ function thurgood_profile_modules() {
     'path',
     'search',
     'taxonomy',
-    'upload',
   
     // The rest are contrib modules, sorted by makefile:
 
