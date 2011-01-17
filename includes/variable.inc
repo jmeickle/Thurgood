@@ -59,8 +59,8 @@ variable_set('vertical_tabs_node_type_settings', 0);
 variable_set('pathauto_node_pattern', '[title-raw]');
 
 // Contact form settings.
+variable_set('contact_default_status', 0);
 variable_set('contact_form_information', "Run into a bug on our site? Spot inaccurate information? Just plain don't like something and want us to know? Leave a message for the site webmaster using the contact form below.");
-variable_set('contact_default_status', 1);
 variable_set('contact_hourly_threshold', 3);
 
 $contact_info = array (
