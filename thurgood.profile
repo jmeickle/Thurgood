@@ -143,6 +143,7 @@ function thurgood_profile_modules() {
 
     'jquery_ui',
     'jquery_ui_dialog',
+    'jquery_update',
 
     // views.make
     'views',
