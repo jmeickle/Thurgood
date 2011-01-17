@@ -4,9 +4,9 @@
   node_type_delete('profile');
 
   // Default these to not be promoted:
-  variable_set('node_options_article', array(0, 'status'));
-  variable_set('node_options_event', array(0, 'status'));
-  variable_set('node_options_place', array(0, 'status'));
+  variable_set('node_options_article', array(0 => 'status'));
+  variable_set('node_options_event', array(0 => 'status'));
+  variable_set('node_options_place', array(0 => 'status'));
 
   // Disable uploads.
   // Commented out because we're not currently using upload.module.
