@@ -43,6 +43,7 @@ function thurgood_profile_modules() {
     'backup_migrate',
     'backup_migrate_files',
     'devel',
+    'devel_generate',
     'performance',
     'googleanalytics',
     'node_import',
