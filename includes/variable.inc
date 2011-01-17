@@ -13,10 +13,10 @@ variable_set('site_slogan', 'If we had a slogan it would go here.');
 // Default preset is the same one used on the node editing page.
 variable_set('openlayers_default_preset', 'thurgood_form');
 
-// Obviously, this depends on your domain!
+// Google Maps API key. Obviously, this depends on your domain!
 variable_set('openlayers_layers_google_api', 'ABQIAAAAYxy6rrenR0GtIuGHI9I35BS31JS7lLTyVkZkrmJvmWOn6proUxQh9Z_wcnDGfs4-wuC02ZFkd997uQ');
 
-// Not currently used.
+// Location of local OpenLayers.js file. Not currently used.
 // variable_set(' ', 'http://ctreentry.info/OpenLayers.js');
 
 // Date settings
@@ -37,6 +37,12 @@ variable_set('search_cron_limit', 300);
 
 // Input filter settings
 variable_set('filter_default_format', 2);
+
+// Admin Menu settings.
+variable_set('admin_menu_margin_top', 1);
+variable_set('admin_menu_position_fixed', 1);
+variable_set('admin_menu_tweak_modules', 1);
+variable_set('admin_menu_tweak_tabs', 0);
 
 // Vertical Tabs settings
 variable_set('vertical_tabs_default', 1);
