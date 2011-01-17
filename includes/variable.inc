@@ -52,7 +52,7 @@ $fs_env_settings = serialize(array(
         ),
     'base_path' => 'search',
     'start_page' => 'search/results',
-    'results_style => 'faceted_search_views:thurgood_search_map',
+    'results_style' => 'faceted_search_views:thurgood_search_map',
     'results_style_selective_extracts' => 0,
     'current_block' => 1,
     'keyword_block' => 1,
