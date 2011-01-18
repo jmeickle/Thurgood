@@ -37,7 +37,7 @@ variable_set('theme_settings', array(
     'default_favicon' => 1,
     'favicon_path' => '',
     'favicon_upload' => '',
-);
+));
 
 // OpenLayers settings.
 // Default preset is the same one used on the node editing page.
