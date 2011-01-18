@@ -1,0 +1,3 @@
+<?php
+
+include_once('thurgood_settings.features.inc');
