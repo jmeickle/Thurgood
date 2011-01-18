@@ -1,19 +1,16 @@
 <?php
-  // This isn't actually necessary as there are no node_access() entries,
-  // but we run it to prevent the "rebuild node access" message from being
-  // shown on install.
-  node_access_rebuild();
-
-  // Rebuild key tables/caches
+  // Clear caches.
   drupal_flush_all_caches();
-/**
-  // Set default theme. This must happen after drupal_flush_all_caches(), which
-  // will run system_theme_data() without detecting themes in the install
-  // profile directory.
-  _openatrium_system_theme_data();
-  db_query("UPDATE {blocks} SET status = 0, region = ''"); // disable all DB blocks
-  db_query("UPDATE {system} SET status = 0 WHERE type = 'theme' and name ='%s'", 'garland');
-  db_query("UPDATE {system} SET status = 0 WHERE type = 'theme' and name ='%s'", 'ginkgo');
-  variable_set('theme_default', 'ginkgo');
-**/
+ 
+  // Enable the right theme. This must be handled after drupal_flush_all_caches()
+  // which rebuilds the system table based on a stale static cache,
+  // blowing away our changes.
+  _fusebase_system_theme_data();
+  db_query("UPDATE {system} SET status = 0 WHERE type = 'theme'");
+  db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' AND name = 'rubik'");
+  db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' AND name = 'sky_thurgood'");
+  variable_set('theme_default', 'sky_thurgood');
+  variable_set('admin_theme', 'rubik');
+  //  variable_set('node_admin_theme', 1);
+
 ?>
