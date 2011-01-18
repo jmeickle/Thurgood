@@ -10,6 +10,11 @@
  */
 
 /*This is ridiculously messy. My apologies to whoever finds this! I swear I planned to refactor this...*/
+
+html, body { background: #fff url(../images/Hartford.jpg) no-repeat center;}
+
+#header { background: #fff url(../images/marble.jpg) fixed no-repeat center center; }
+
 .node {padding-right: 0px}
 
 #comment-wrapper, .node .content {padding: 5px;}
