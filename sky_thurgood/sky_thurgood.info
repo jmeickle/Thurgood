@@ -1,0 +1,30 @@
+name = Sky (Thurgood)
+description = Sky is a center aligned, fixed or fluid theme that supports either all sidebar combinations (left, right, both, none)
+core = 6.x
+engine = phptemplate
+base theme = sky
+
+; REGIONS
+; -----------------------------------------------------------------------------
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[contenttop] = Content top
+regions[contentbottom] = Content bottom
+regions[contentfooter] = Content footer
+
+; STYLESHEETS
+; -----------------------------------------------------------------------------
+stylesheets[all][] = css/sky_thurgood.css
+
+; SCRIPTS
+; -----------------------------------------------------------------------------
+
+; THEME SETTINGS
+; -----------------------------------------------------------------------------
+
+; Information added by drupal.org packaging script on 2010-01-25
+version = "6.x-3.10"
+core = "6.x"
+project = "sky_thurgood"
+datestamp = "1264385706"
+
