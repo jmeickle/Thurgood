@@ -43,6 +43,9 @@ includes[views] = "makefiles/views.make"
 ; Features modules:
 includes[features] = "makefiles/features.make"
 
+; Themes:
+includes[themes] = "makefiles/themes.make"
+
 ; Patches:
 
 ; hierarchy field in vocabulary table resets to 0 when editing vocabulary
