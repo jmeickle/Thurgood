@@ -20,4 +20,3 @@ projects[transliteration][subdir] = "contrib"
 ; Image modules
 projects[imageapi][subdir] = "contrib"
 projects[imagecache][subdir] = "contrib"
-projects[pngfix][subdir] = "contrib"

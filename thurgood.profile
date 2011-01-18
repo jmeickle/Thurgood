@@ -71,7 +71,6 @@ function thurgood_profile_modules() {
     'imageapi_gd',
     'imagecache',
     'imagecache_ui',
-    'pngfix',
 
     // cck.make
     'conditional_fields',
