@@ -286,7 +286,7 @@ function thurgood_profile_tasks(&$task, $url) {
     // Set up any Blocks and Contexts.
     require("block.inc");
 
-    // We're done! Clear caches.
+    // We're done! Clear caches again, just to be safe.
     drupal_flush_all_caches();
 }
 
