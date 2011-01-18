@@ -95,9 +95,7 @@ $fs_env_settings = array(
   $env->description = 'Thurgood: Search Environment';
 
   foreach ($fs_env_settings as $key => $value) {
-    if (isset($env->settings[$key])) {
       $env->settings[$key] = $value;
-    }
   }
   // Save to database, obtaining a new env_id if not updating an existing
   // environment.
