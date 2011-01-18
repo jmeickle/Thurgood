@@ -155,6 +155,7 @@ function thurgood_profile_modules() {
     // (STUB) wysiwyg.make
 
     // features.make
+    'thurgood_settings',
     'thurgood_test',
   );
 }
