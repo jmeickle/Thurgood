@@ -63,10 +63,10 @@ variable_set('imageapi_image_toolkit', "imageapi_gd");
 variable_set('image_toolkit', "gd");
 
 // Search settings.
-variable_set('search_cron_limit', 300);
+variable_set('search_cron_limit', 200);
 
 // Faceted Search environment settings.
-$fs_env_settings = serialize(array(
+$fs_env_settings = array(
     'title' => 'Resource Search',
     'ignore_status' => 1,
     'types' => array
@@ -75,8 +75,8 @@ $fs_env_settings = serialize(array(
             'article' => 0,
             'event' => 0
         ),
-    'base_path' => 'search',
-    'start_page' => 'search/results',
+    'base_path' => 'find',
+    'start_page' => 'find/results',
     'results_style' => 'faceted_search_views:thurgood_search_map',
     'results_style_selective_extracts' => 0,
     'current_block' => 1,
@@ -88,7 +88,20 @@ $fs_env_settings = serialize(array(
     'tooltips' => 1,
     'related_block' => 1,
     'related_style' => 'list_grouped'
-));
+);
+
+  $env = new faceted_search();
+  $env->name = 'thurgood_search_environment';
+  $env->description = 'Thurgood: Search Environment';
+
+  foreach ($fs_env_settings as $key => $value) {
+    if (isset($env->settings[$key])) {
+      $env->settings[$key] = $value;
+    }
+  }
+  // Save to database, obtaining a new env_id if not updating an existing
+  // environment.
+  drupal_write_record('faceted_search_env', $env, NULL);
 
 $fs_env_query = "
 INSERT INTO `faceted_search_env` (`env_id`, `name`, `description`, `settings`) VALUES
