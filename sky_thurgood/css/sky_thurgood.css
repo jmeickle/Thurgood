@@ -1,0 +1,141 @@
+/* $Id$ */
+/**
+ * Sky
+ * http://drupal.org/project/sky
+ * http://drupal.org/user/88931
+ *
+ * Credits:
+ * Icons: http://www.icojoy.com/articles/44/
+ * Icons: http://www.icojoy.com/articles/46/
+ */
+
+/*This is ridiculously messy. My apologies to whoever finds this! I swear I planned to refactor this...*/
+.node {padding-right: 0px}
+
+#comment-wrapper, .node .content {padding: 5px;}
+
+.field .field-label {	margin-bottom: 10px;
+		margin-top: 5px;
+		font-weight: normal;
+		font-size: 1.5em;
+		letter-spacing: -1px;
+		line-height: 2em;
+		font-family: Georgia, 'Bitstream Vera Serif', serif;}
+
+.gmnoprint .gmnoprint {}
+
+.gmap-popup .node {margin-right: 0px;}
+/*Change the contents of the balloons to be centered...?*/
+
+/*div.views-exposed-widget label
+{border-bottom: 0px;
+border: solid #DDD;
+border-top-left-radius: 0.333em 0.333em;
+border-top-right-radius: 0.333em 0.333em;
+background:#ffffff url('images/marble.jpg') top left;}*/
+
+div.faceted-search-facet a.vt-p
+{}
+
+div.faceted-search-facet h3 {}
+
+div.faceted-search-facet.faceted-search-current h3
+{display: inline;
+font-family: inherit;
+font-size: 1em;
+font-weight: bold;}
+
+/*faceted-search-facet faceted-search-env-resource_search faceted-search-facet--taxonomy--3 faceted-search-facet-active faceted-search-current
+faceted-search-facet faceted-search-env-resource_search faceted-search-facet--taxonomy--3 faceted-search-facet-active faceted-search-guided*/
+
+div.table-wrapper table.faceted-search
+{
+border: 0px;
+}
+
+table.faceted-search tbody tr td:hover, table.faceted-search tbody tr td
+{
+background: none;
+border: 0px;
+}
+
+.view-guided-search-map {margin-bottom: 1.5em;}
+
+.field .field-label-inline-first {font-weight: normal; color: #777;}
+
+fieldset.fieldgroup {padding: 1em; padding-top: 5px; padding-bottom: 5px;}
+
+.field-items p {margin: 0px;}
+
+fieldset legend, div.faceted-search-facet h3, div.views-exposed-widget label, div.box>h2
+{	font-size: 1.5em;
+	font-family: Georgia, 'Bitstream Vera Serif', serif;
+	font-weight: 700;
+	text-shadow: white 1px 1px 1px;
+	color: #555;
+}
+
+table.faceted-search {width: auto;}
+
+fieldset.faceted-search-keyword, fieldset.faceted-search-guided, fieldset.fieldgroup {-webkit-box-shadow: none; width: 93%; margin-right: auto; margin-left: auto;}
+
+.node .meta, fieldset.faceted-search-keyword, fieldset.faceted-search-guided, fieldset.fieldgroup {background:#ffffff url('images/marble.jpg') center center;}
+
+.meta, fieldset.faceted-search-keyword, fieldset.faceted-search-guided, fieldset.fieldgroup {	border-color: #DDD;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;}
+
+.without-photo .meta {	width: 93%;
+			float: none;
+			padding-top: 5px; padding-bottom: 5px; margin-right: auto; margin-left: auto; margin-bottom: 5px;}
+
+#wrapper {	background:#ffffff url('images/bg.jpg') repeat-y;
+		border-style: none double;
+		border-width: thick;
+		border-color:#555555;}
+
+#footer-inner {	background:#ffffff url('images/marble.jpg') repeat-y;
+		border-style: double;
+		border-width: medium thick;
+		border-color:#555555;
+		margin-left:-5px;
+		margin-right: -5px;
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 960px;}
+
+
+.node-teaser {margin-bottom: 1.5em; padding-bottom: .75em;}
+
+/*.meta p {display:inline;}
+.node .terms {display:inline; float:right; max-width: 33%; margin-top:0; font-size: 1em;}
+.node .terms p {font-size: 11px;}
+.node .terms ul {font-size: 1em;}*/
+
+.block h3.title {background:#ffffff url('images/marble.jpg') top left;}
+
+.node .links li {background:#ffffff url('images/marble.jpg') top left;}
+
+.comment ul.links {background:#ffffff url('images/marble.jpg') top left;}
+.comment ul.links li {background: none;}
+
+.pager-inner {background:#ffffff url('images/marble.jpg') top left;}
+
+#header.name-slogan #site-slogan{margin:0px;}
+
+#navigation {background:#ffffff url('images/marble.jpg') center center;
+		border-style: double none; border-width: medium; border-color:#555555;}
+
+#navigation a, #navigation a:visited {background:none;}
+#navigation .wrap-{float: right;}
+
+div#header {background:#ffffff url('images/marble.jpg') bottom;}
+#header #site-name a {font-family: Georgia, serif; color:#555555; font-weight:bold; text-shadow:3px 3px 3px #FFFFFF; font-size: .8em;}
+
+h2 {font-size: 2em; letter-spacing: 0}
+.block h3.title {font-size: 1.5em;}
+.form-submit{font-family: Georgia, serif;}
+.form-item label {font-size: 1em; font-weight: normal;}
+/* @end */
