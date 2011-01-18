@@ -75,8 +75,8 @@ $fs_env_settings = array(
             'article' => 0,
             'event' => 0
         ),
-    'base_path' => 'find',
-    'start_page' => 'find/results',
+    'base_path' => 'place/search',
+    'start_page' => 'place/search/results',
     'results_style' => 'faceted_search_views:thurgood_search_map',
     'results_style_selective_extracts' => 0,
     'current_block' => 1,
@@ -97,31 +97,32 @@ $fs_env_settings = array(
   foreach ($fs_env_settings as $key => $value) {
       $env->settings[$key] = $value;
   }
+
   // Save to database, obtaining a new env_id if not updating an existing
   // environment.
   drupal_write_record('faceted_search_env', $env, NULL);
 
-$fs_env_query = "
-INSERT INTO `faceted_search_env` (`env_id`, `name`, `description`, `settings`) VALUES
-(1, 'thurgood_search_environment', 'Thurgood: Search Environment', '" . $fs_env_settings . "')
-";
+  $fs_env_query = "
+  INSERT INTO `faceted_search_env` (`env_id`, `name`, `description`, `settings`) VALUES
+  (1, 'thurgood_search_environment', 'Thurgood: Search Environment', '" . $fs_env_settings . "')
+  ";
 
-// Faceted Search filters settings.
+  // Faceted Search filters settings.
 
-$fs_filters_query = "
-INSERT INTO `faceted_search_filters` (`env_id`, `filter_key`, `filter_id`, `status`, `weight`, `sort`, `max_categories`) VALUES
-(1, 'node', 'keyword', 1, -999, '', 0),
-(1, 'taxonomy', '1', 1, 2, 'term', 0),
-(1, 'taxonomy', '2', 1, 1, 'term', 0),
-(1, 'taxonomy', '3', 1, 3, 'term', 0)
-";
+  $fs_filters_query = "
+  INSERT INTO `faceted_search_filters` (`env_id`, `filter_key`, `filter_id`, `status`, `weight`, `sort`, `max_categories`) VALUES
+  (1, 'node', 'keyword', 1, -999, '', 0),
+  (1, 'taxonomy', '1', 1, 2, 'term', 0),
+  (1, 'taxonomy', '2', 1, 1, 'term', 0),
+  (1, 'taxonomy', '3', 1, 3, 'term', 0)
+  ";
 
-// Queries to insert the above.
-db_query($fs_env_query);
-db_query($fs_filters_query);
+  // Queries to insert the above.
+  db_query($fs_env_query);
+  db_query($fs_filters_query);
 
-// Admin settings
-variable_set('admin_toolbar', array(
+  // Admin settings
+  variable_set('admin_toolbar', array(
     'layout' => "horizontal",
     'position' => "sw",
     'behavior' => "df",
@@ -136,7 +137,7 @@ variable_set('admin_toolbar', array(
             'admin-devel' => -1
         )
 
-));
+  ));
 
 // Admin Menu settings
 variable_set('admin_menu_margin_top', 1);
