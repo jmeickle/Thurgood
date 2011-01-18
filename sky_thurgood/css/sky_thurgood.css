@@ -27,12 +27,14 @@
 .gmap-popup .node {margin-right: 0px;}
 /*Change the contents of the balloons to be centered...?*/
 
-/*div.views-exposed-widget label
+/*
+div.views-exposed-widget label
 {border-bottom: 0px;
 border: solid #DDD;
 border-top-left-radius: 0.333em 0.333em;
 border-top-right-radius: 0.333em 0.333em;
-background:#ffffff url('images/marble.jpg') top left;}*/
+background:#ffffff url('../images/marble.jpg') top left;}
+*/
 
 div.faceted-search-facet a.vt-p
 {}
@@ -79,7 +81,7 @@ table.faceted-search {width: auto;}
 
 fieldset.faceted-search-keyword, fieldset.faceted-search-guided, fieldset.fieldgroup {-webkit-box-shadow: none; width: 93%; margin-right: auto; margin-left: auto;}
 
-.node .meta, fieldset.faceted-search-keyword, fieldset.faceted-search-guided, fieldset.fieldgroup {background:#ffffff url('images/marble.jpg') center center;}
+.node .meta, fieldset.faceted-search-keyword, fieldset.faceted-search-guided, fieldset.fieldgroup {background:#ffffff url('../images/marble.jpg') center center;}
 
 .meta, fieldset.faceted-search-keyword, fieldset.faceted-search-guided, fieldset.fieldgroup {	border-color: #DDD;
 	border-radius: 5px;
@@ -91,12 +93,12 @@ fieldset.faceted-search-keyword, fieldset.faceted-search-guided, fieldset.fieldg
 			float: none;
 			padding-top: 5px; padding-bottom: 5px; margin-right: auto; margin-left: auto; margin-bottom: 5px;}
 
-#wrapper {	background:#ffffff url('images/bg.jpg') repeat-y;
+#wrapper {	background:#ffffff url('../images/bg.jpg') repeat-y;
 		border-style: none double;
 		border-width: thick;
 		border-color:#555555;}
 
-#footer-inner {	background:#ffffff url('images/marble.jpg') repeat-y;
+#footer-inner {	background:#ffffff url('../images/marble.jpg') repeat-y;
 		border-style: double;
 		border-width: medium thick;
 		border-color:#555555;
@@ -114,24 +116,24 @@ fieldset.faceted-search-keyword, fieldset.faceted-search-guided, fieldset.fieldg
 .node .terms p {font-size: 11px;}
 .node .terms ul {font-size: 1em;}*/
 
-.block h3.title {background:#ffffff url('images/marble.jpg') top left;}
+.block h3.title {background:#ffffff url('../images/marble.jpg') top left;}
 
-.node .links li {background:#ffffff url('images/marble.jpg') top left;}
+.node .links li {background:#ffffff url('../images/marble.jpg') top left;}
 
-.comment ul.links {background:#ffffff url('images/marble.jpg') top left;}
+.comment ul.links {background:#ffffff url('../images/marble.jpg') top left;}
 .comment ul.links li {background: none;}
 
-.pager-inner {background:#ffffff url('images/marble.jpg') top left;}
+.pager-inner {background:#ffffff url('../images/marble.jpg') top left;}
 
 #header.name-slogan #site-slogan{margin:0px;}
 
-#navigation {background:#ffffff url('images/marble.jpg') center center;
+#navigation {background:#ffffff url('../images/marble.jpg') center center;
 		border-style: double none; border-width: medium; border-color:#555555;}
 
 #navigation a, #navigation a:visited {background:none;}
 #navigation .wrap-{float: right;}
 
-div#header {background:#ffffff url('images/marble.jpg') bottom;}
+div#header {background:#ffffff url('../images/marble.jpg') bottom;}
 #header #site-name a {font-family: Georgia, serif; color:#555555; font-weight:bold; text-shadow:3px 3px 3px #FFFFFF; font-size: .8em;}
 
 h2 {font-size: 2em; letter-spacing: 0}
