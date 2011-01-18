@@ -151,8 +151,10 @@ variable_set('vertical_tabs_minimum', 1);
 variable_set('vertical_tabs_node_type_settings', 0);
 
 // Pathauto settings
-// Default:
-variable_set('pathauto_node_pattern', '[title-raw]');
+variable_set('pathauto_node_pattern', '[type]/[title-raw]');
+variable_set('pathauto_reduce_ascii', 1);
+variable_set('pathauto_update_action', "1");
+variable_set('pathauto_max_bulk_update', "100");
 
 // Contact form settings.
 variable_set('contact_default_status', 0);
