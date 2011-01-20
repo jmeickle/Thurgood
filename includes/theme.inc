@@ -11,6 +11,5 @@
   db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' AND name = 'sky_thurgood'");
   variable_set('theme_default', 'sky_thurgood');
   variable_set('admin_theme', 'rubik');
-  //  variable_set('node_admin_theme', 1);
-
+  system_initialize_theme_blocks('sky_thurgood');
 ?>
