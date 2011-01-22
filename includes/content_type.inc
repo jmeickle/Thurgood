@@ -27,14 +27,72 @@
   variable_set('theme_settings', $theme_settings);
 
   // Field weight settings.
-db_query("
-INSERT INTO `variable` (`name`, `value`) VALUES
-('content_extra_weights_article', 'a:7:{s:5:"title";s:2:"-5";s:10:"body_field";s:2:"-4";s:20:"revision_information";s:1:"5";s:6:"author";s:1:"4";s:7:"options";s:1:"6";s:4:"menu";s:1:"3";s:4:"path";s:1:"7";}'),
-('content_extra_weights_event', 'a:7:{s:5:"title";s:2:"-5";s:10:"body_field";s:2:"-4";s:20:"revision_information";s:1:"7";s:6:"author";s:1:"8";s:7:"options";s:1:"9";s:4:"menu";s:1:"6";s:4:"path";s:2:"10";}'),
-('content_extra_weights_organization', 'a:7:{s:5:"title";s:2:"-5";s:10:"body_field";s:2:"-4";s:20:"revision_information";s:1:"6";s:6:"author";s:1:"5";s:7:"options";s:1:"7";s:4:"menu";s:1:"4";s:4:"path";s:1:"8";}'),
-('content_extra_weights_person', 'a:7:{s:5:"title";s:2:"-5";s:10:"body_field";s:2:"-4";s:20:"revision_information";s:1:"6";s:6:"author";s:1:"5";s:7:"options";s:1:"7";s:4:"menu";s:1:"4";s:4:"path";s:1:"8";}'),
-('content_extra_weights_place', 'a:7:{s:5:"title";s:2:"-1";s:10:"body_field";s:2:"10";s:20:"revision_information";s:2:"11";s:6:"author";s:2:"12";s:7:"options";s:2:"13";s:4:"menu";s:1:"9";s:4:"path";s:2:"14";}')
-");
+
+$article = 
+array
+(
+    'title' => -5,
+    'body_field' => -4,
+    'revision_information' => 5,
+    'author' => 4,
+    'options' => 6,
+    'menu' => 3,
+    'path' => 7,
+);
+
+$event =
+array
+(
+    'title' => -5,
+    'body_field' => -4,
+    'revision_information' => 7,
+    'author' => 8,
+    'options' => 9,
+    'menu' => 6,
+    'path' => 10,
+);
+
+$organization =
+array
+(
+    'title' => -5,
+    'body_field' => -4,
+    'revision_information' => 6,
+    'author' => 5,
+    'options' => 7,
+    'menu' => 4,
+    'path' => 8,
+);
+
+$person =
+array
+(
+    'title' => -5,
+    'body_field' => -4,
+    'revision_information' => 6,
+    'author' => 5,
+    'options' => 7,
+    'menu' => 4,
+    'path' => 8,
+);
+
+$place = 
+array
+(
+    'title' => -1,
+    'body_field' => 10,
+    'revision_information' => 11,
+    'author' => 12,
+    'options' => 13,
+    'menu' => 9,
+    'path' => 14,
+);
+
+  variable_set('content_extra_weights_article', $article);
+  variable_set('content_extra_weights_event', $event);
+  variable_set('content_extra_weights_organization', $organization);
+  variable_set('content_extra_weights_person', $person);
+  variable_set('content_extra_weights_place', $place);
 
   // Content Profile settings.
   variable_set("content_profile_use_person", 1);
