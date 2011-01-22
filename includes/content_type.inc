@@ -27,7 +27,8 @@
   variable_set('theme_settings', $theme_settings);
 
   // Field weight settings.
-
+  // Looks like Strongarm might take care of this?
+/**
 $article = 
 array
 (
@@ -93,7 +94,7 @@ array
   variable_set('content_extra_weights_organization', $organization);
   variable_set('content_extra_weights_person', $person);
   variable_set('content_extra_weights_place', $place);
-
+**/
   // Content Profile settings.
   variable_set("content_profile_use_person", 1);
   variable_set("content_profile_use_organization", 1);
