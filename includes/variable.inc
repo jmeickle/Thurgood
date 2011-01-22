@@ -110,23 +110,17 @@ $fs_env_settings = array(
   // environment.
   drupal_write_record('faceted_search_env', $env, NULL);
 
-  $fs_env_query = "
-  INSERT INTO `faceted_search_env` (`env_id`, `name`, `description`, `settings`) VALUES
-  (1, 'thurgood_search_environment', 'Thurgood: Search Environment', '" . $fs_env_settings . "')
-  ";
-
   // Faceted Search filters settings.
 
   $fs_filters_query = "
   INSERT INTO `faceted_search_filters` (`env_id`, `filter_key`, `filter_id`, `status`, `weight`, `sort`, `max_categories`) VALUES
-  (1, 'node', 'keyword', 1, -999, '', 0),
-  (1, 'taxonomy', '1', 1, 2, 'term', 0),
-  (1, 'taxonomy', '2', 1, 1, 'term', 0),
-  (1, 'taxonomy', '3', 1, 3, 'term', 0)
+(1, 'node', 'keyword', 1, -999, '', 0),
+(1, 'taxonomy', '1', 1, 2, 'term', 0),
+(1, 'taxonomy', '2', 1, 1, 'term', 0),
+(1, 'taxonomy', '3', 1, 3, 'term', 0),
+(1, 'taxonomy', '4', 1, -8, 'term', 0)
   ";
 
-  // Queries to insert the above.
-  db_query($fs_env_query);
   db_query($fs_filters_query);
 
   // Admin settings
