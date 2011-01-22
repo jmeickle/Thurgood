@@ -148,13 +148,151 @@ $fs_env_settings = array(
   ));
 
 // Hierarchical Select settings.
-db_query("
-INSERT INTO `variable` (`name`, `value`) VALUES
-('hs_config_content-taxonomy-field_taxonomy_populations', 'a:9:{s:9:"config_id";s:43:"content-taxonomy-field_taxonomy_populations";s:12:"save_lineage";s:1:"1";s:15:"enforce_deepest";s:1:"0";s:12:"entity_count";s:1:"0";s:14:"require_entity";s:1:"0";s:9:"resizable";s:1:"1";s:12:"level_labels";a:2:{s:6:"status";i:1;s:6:"labels";a:1:{i:0;s:10:"Population";}}s:7:"dropbox";a:4:{s:6:"status";i:1;s:5:"title";s:18:"Current selections";s:5:"limit";s:1:"0";s:8:"reset_hs";s:1:"1";}s:11:"editability";a:5:{s:6:"status";i:0;s:10:"item_types";a:1:{i:0;s:0:"";}s:14:"allowed_levels";a:1:{i:0;i:1;}s:16:"allow_new_levels";i:0;s:10:"max_levels";s:1:"0";}}'),
-('hs_config_content-taxonomy-field_taxonomy_region', 'a:9:{s:9:"config_id";s:38:"content-taxonomy-field_taxonomy_region";s:12:"save_lineage";s:1:"1";s:15:"enforce_deepest";s:1:"0";s:12:"entity_count";s:1:"0";s:14:"require_entity";s:1:"0";s:9:"resizable";s:1:"1";s:12:"level_labels";a:2:{s:6:"status";i:1;s:6:"labels";a:2:{i:0;s:4:"City";i:1;s:12:"Neighborhood";}}s:7:"dropbox";a:4:{s:6:"status";i:1;s:5:"title";s:18:"Current selections";s:5:"limit";s:1:"0";s:8:"reset_hs";s:1:"1";}s:11:"editability";a:5:{s:6:"status";i:0;s:10:"item_types";a:2:{i:0;s:0:"";i:1;s:0:"";}s:14:"allowed_levels";a:2:{i:0;i:1;i:1;i:1;}s:16:"allow_new_levels";i:0;s:10:"max_levels";s:1:"0";}}'),
-('hs_config_content-taxonomy-field_taxonomy_services', 'a:9:{s:9:"config_id";s:40:"content-taxonomy-field_taxonomy_services";s:12:"save_lineage";s:1:"1";s:15:"enforce_deepest";s:1:"0";s:12:"entity_count";s:1:"0";s:14:"require_entity";s:1:"0";s:9:"resizable";s:1:"1";s:12:"level_labels";a:2:{s:6:"status";i:1;s:6:"labels";a:2:{i:0;s:8:"Category";i:1;s:11:"Subcategory";}}s:7:"dropbox";a:4:{s:6:"status";i:1;s:5:"title";s:18:"Current selections";s:5:"limit";s:1:"0";s:8:"reset_hs";s:1:"1";}s:11:"editability";a:5:{s:6:"status";i:0;s:10:"item_types";a:2:{i:0;s:0:"";i:1;s:0:"";}s:14:"allowed_levels";a:2:{i:0;i:1;i:1;i:1;}s:16:"allow_new_levels";i:0;s:10:"max_levels";s:1:"0";}}')
-");
 
+$taxonomy_populations =
+array
+(
+    'config_id' => 'content-taxonomy-field_taxonomy_populations',
+    'save_lineage' => 1,
+    'enforce_deepest' => 0,
+    'entity_count' => 0,
+    'require_entity' => 0,
+    'resizable' => 1,
+    'level_labels' => array
+        (
+            'status' => 1,
+            'labels' => array
+                (
+                    '0' => 'Population',
+                ),
+
+        ),
+
+    'dropbox' => array
+        (
+            'status' => 1,
+            'title' => 'Current selections',
+            'limit' => 0,
+            'reset_hs' => 1,
+        ),
+
+    'editability' => array
+        (
+            'status' => 0,
+            'item_types' => array
+                (
+                    '0' => ''
+                ),
+
+            'allowed_levels' => Array
+                (
+                    '0' => 1,
+                ),
+
+            'allow_new_levels' => 0,
+            'max_levels' => 0,
+        ),
+
+);
+
+$taxonomy_region =
+array 
+(
+    'config_id' => 'content-taxonomy-field_taxonomy_region',
+    'save_lineage' => 1,
+    'enforce_deepest' => 0,
+    'entity_count' => 0,
+    'require_entity' => 0,
+    'resizable' => 1,
+    'level_labels' => array
+        (
+            'status' => 1,
+            'labels' => array
+                (
+                    '0' => 'City',
+                    '1' => 'Neighborhood',
+                ),
+        ),
+
+    'dropbox' => array
+        (
+            'status' => 1,
+            'title' => 'Current selections',
+            'limit' => 0,
+            'reset_hs' => 1,
+        ),
+
+    'editability' => array
+        (
+            'status' => 0,
+            'item_types' => array
+                (
+                    '0' => '',
+                    '1' => '',
+                ),
+
+            'allowed_levels' => array
+                (
+                    '0' => 1,
+                    '1' => 1,
+                ),
+
+            'allow_new_levels' => 0,
+            'max_levels' => 0,
+        ),
+
+);
+
+$taxonomy_services =
+array
+(
+    'config_id' => 'content-taxonomy-field_taxonomy_services',
+    'save_lineage' => 1,
+    'enforce_deepest' => 0,
+    'entity_count' => 0,
+    'require_entity' => 0,
+    'resizable' => 1,
+    'level_labels' => array
+        (
+            'status' => 1,
+            'labels' => array
+                (
+                    '0' => 'Category',
+                    '1' => 'Subcategory',
+                ),
+
+        ),
+    'dropbox' => array
+        (
+            'status' => 1,
+            'title' => 'Current selections',
+            'limit' => 0,
+            'reset_hs' => 1,
+        ),
+
+    'editability' => array
+        (
+            'status' => 0,
+            'item_types' => array
+                (
+                    '0' => '',
+                    '1' => '',
+                ),
+
+            'allowed_levels' => array
+                (
+                    '0' => 1,
+                    '1' => 1,
+                ),
+
+            'allow_new_levels' => 0,
+            'max_levels' => 0,
+        ),
+);
+
+variable_set('hs_config_content-taxonomy-field_taxonomy_populations', $taxonomy_populations);
+variable_set('hs_config_content-taxonomy-field_taxonomy_region', $taxonomy_region);
+variable_set('hs_config_content-taxonomy-field_taxonomy_services', $taxonomy_services);
 
 // Admin Menu settings
 variable_set('admin_menu_margin_top', 1);
