@@ -2,7 +2,8 @@
 
 // Basic site information
 variable_set('site_footer', 'This website was developed by the <a href="www.ccsu.edu/imrp">Institute for Municipal and Regional Policy</a> at <a href="www.ccsu.edu">Central Connecticut State University</a> using <a href="github.com/Eronarn/Thurgood">Thurgood</a>, a custom installation profile for <a href="drupal.org">Drupal</a>.');
-variable_set('site_frontpage', 'home');
+// Don't have anything here yet.
+// variable_set('site_frontpage', 'home');
 variable_set('site_mail', 'eronarn@gmail.com');
 variable_set('site_mission', 'Welcome to the homepage of the Connecticut Reentry Roundtable Collaborative.');
 variable_set('site_name', 'Connecticut Reentry Roundtable Collaborative');
