@@ -1,7 +1,7 @@
 <?php
 
 // Basic site information
-variable_set('site_footer', 'This website was developed by the <a href="www.ccsu.edu/imrp">Institute for Municipal and Regional Policy</a> at <a href="www.ccsu.edu">Central Connecticut State University</a> using <a href="github.com/Eronarn/Thurgood">Thurgood</a>, a custom installation profile for <a href="drupal.org">Drupal</a>.');
+variable_set('site_footer', 'This website was developed by the <a href="http://www.ccsu.edu/imrp">Institute for Municipal and Regional Policy</a> at <a href="http://www.ccsu.edu">Central Connecticut State University</a> using <a href="http://github.com/Eronarn/Thurgood">Thurgood</a>, a custom installation profile for <a href="http://drupal.org">Drupal</a>.');
 // Don't have anything here yet.
 // variable_set('site_frontpage', 'home');
 variable_set('site_mail', 'eronarn@gmail.com');
