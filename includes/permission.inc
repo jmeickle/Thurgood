@@ -12,7 +12,8 @@ INSERT INTO `role` (`rid`, `name`) VALUES
 (7, 'mailing list manager'),
 (8, 'moderator'),
 (9, 'news manager'),
-(10, 'site editor')
+(10, 'site editor'),
+(11, 'pending authentication')
 ");
 
 ?>
