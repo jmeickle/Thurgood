@@ -1,12 +1,12 @@
 <?php
 
 // Basic site information
-variable_set('site_footer', 'Developed by the Institute for Municipal and Regional Policy at Central Connecticut State University.');
+variable_set('site_footer', 'This website was developed by the <a href="www.ccsu.edu/imrp">Institute for Municipal and Regional Policy</a> at <a href="www.ccsu.edu">Central Connecticut State University</a> using <a href="github.com/Eronarn/Thurgood">Thurgood</a>, a custom installation profile for <a href="drupal.org">Drupal</a>.');
 variable_set('site_frontpage', 'home');
 variable_set('site_mail', 'eronarn@gmail.com');
-variable_set('site_mission', 'Welcome to the test page of the Connecticut Reentry Collaborative.');
-variable_set('site_name', 'Connecticut Reentry Collaborative');
-variable_set('site_offline_message', 'The Connecticut Reentry Collaborative test page is currently offline.');
+variable_set('site_mission', 'Welcome to the homepage of the Connecticut Reentry Roundtable Collaborative.');
+variable_set('site_name', 'Connecticut Reentry Roundtable Collaborative');
+variable_set('site_offline_message', 'The Connecticut Reentry Roundtable Collaborative's website is currently offline for maintenance. Our apologies for the interruption.');
 variable_set('site_slogan', 'If we had a slogan it would go here.');
 
 // Core settings.
