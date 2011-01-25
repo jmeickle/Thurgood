@@ -177,6 +177,7 @@ function thurgood_profile_modules() {
     // (STUB) wysiwyg.make
 
     // features.make
+    'thurgood_custom_module',
     'thurgood_feature',
   );
 }
