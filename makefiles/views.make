@@ -7,4 +7,4 @@ projects[views][subdir] = "contrib"
 projects[views_customfield][subdir] = "contrib"
 projects[views_or][subdir] = "contrib"
 projects[views_rss][subdir] = "contrib"
-
+projects[views_slideshow][subdir] = "contrib"

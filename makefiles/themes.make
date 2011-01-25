@@ -11,4 +11,4 @@ projects[rubik][type] = theme
 projects[sky][type] = theme
 projects[sky_thurgood][type] = theme
 projects[sky_thurgood][download][type] = git
-projects[sky_thurgood][download][url] = git://github.com/Eronarn/Thurgood-Sky.git
+projects[sky_thurgood][download][url] = git://github.com/Eronarn/sky_thurgood.git

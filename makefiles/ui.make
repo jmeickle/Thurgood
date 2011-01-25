@@ -3,6 +3,7 @@
 api = 2
 core = 6.x
 
+projects[blocks404][subdir] = "contrib"
 projects[admin][subdir] = "contrib"
 projects[admin_menu][subdir] = "contrib"
 projects[advanced_help][subdir] = "contrib"
@@ -14,6 +15,7 @@ projects[logintoboggan][subdir] = "contrib"
 projects[node_clone][subdir] = "contrib"
 projects[nrembrowser][subdir] = "contrib"
 projects[nrembrowser][version] = 1.0-beta14
+projects[quicktabs][subdir] = "contrib"
 projects[taxonomy_manager][subdir] = "contrib"
 projects[vertical_tabs][subdir] = "contrib"
 projects[vt_default][subdir] = "contrib"
