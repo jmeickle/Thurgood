@@ -47,13 +47,15 @@ function thurgood_profile_modules() {
     'performance',
     'googleanalytics',
     'node_import',
-//    'strongarm', // Installed later because it depends on Ctools.
+// Installed later because it depends on Ctools.
+//    'strongarm',
 
     // basic.make
     'content_profile',
     'content_profile_tokens',
     'content_profile_registration',
-//    'context', // Installed later because they depend on Ctools.
+// Installed later because they depend on Ctools.
+//    'context',
 //    'context_layouts',
 //    'context_ui',
     'ctools',
@@ -65,6 +67,9 @@ function thurgood_profile_modules() {
     'date_timezone',
     'features',
 //    'modalframe', // Installed later because it depends on Jquery.
+    'node_tools',
+    'rules',
+    'rules_admin',
     'token',
     'transliteration',
     'imageapi',
@@ -125,10 +130,12 @@ function thurgood_profile_modules() {
 //    'nodewords_basic',
 //    'nodewords',
     'pathauto',
+    'pathauto_persist',
     'page_title',
 //    'xmlsitemap',
 
     // ui.make
+    'blocks404',
     'admin',
     'admin_menu',
     'advanced_help',
@@ -141,6 +148,7 @@ function thurgood_profile_modules() {
     'hs_taxonomy',
     'logintoboggan',
     'nrembrowser',
+    'quicktabs',
     'taxonomy_manager',
     'vertical_tabs',
     'vt_default',
@@ -154,15 +162,22 @@ function thurgood_profile_modules() {
     'views_customfield',
     'views_export',
     'views_or',
-    'views_ui',
     'views_rss',
+    'views_slideshow',
+    'views_slideshow_singleframe',
+    'views_ui',
 
-    // (STUB) workflow.make
+    // workflow.make
+    'diff',
+    'override_node_options',
+    'revisioning',
+    'workflow',
+    'workflow_access',
+
     // (STUB) wysiwyg.make
 
     // features.make
-    'thurgood_settings',
-    'thurgood_test',
+    'thurgood_feature',
   );
 }
  
