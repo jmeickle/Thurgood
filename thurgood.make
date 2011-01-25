@@ -34,8 +34,8 @@ includes[ui] = "makefiles/ui.make"
 ; Views and supporting modules.
 includes[views] = "makefiles/views.make"
 
-; (STUB) Editing workflow modules.
-;includes[workflow] = "makefiles/workflow.make"
+; Editing workflow modules.
+includes[workflow] = "makefiles/workflow.make"
 
 ; (STUB) WYSIWYG modules.
 ;includes[wysiwyg] = "makefiles/wysiwyg.make"
