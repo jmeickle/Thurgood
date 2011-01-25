@@ -7,7 +7,8 @@ variable_set('site_footer', 'This website was developed by the <a href="http://w
 variable_set('site_mail', 'eronarn@gmail.com');
 variable_set('site_mission', 'Welcome to the homepage of the Connecticut Reentry Roundtable Collaborative.');
 variable_set('site_name', 'Connecticut Reentry Roundtable Collaborative');
-variable_set('site_offline_message', 'The Connecticut Reentry Roundtable Collaborative's website is currently offline for maintenance. Our apologies for the interruption.');
+variable_set('site_offline_message', "The Connecticut Reentry Roundtable Collaborative's website is currently offline for maintenance. Our apologies for the interruption.");
+
 variable_set('site_slogan', 'If we had a slogan it would go here.');
 
 // Core settings.
