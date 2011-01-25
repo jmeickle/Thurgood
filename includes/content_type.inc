@@ -3,12 +3,14 @@
   // Purge unwanted node types.
   node_type_delete('profile');
 
-  // Default these to not be promoted:
-  variable_set('node_options_article', array(0 => 'status'));
-  variable_set('node_options_event', array(0 => 'status'));
-  variable_set('node_options_person', array(0 => 'status'));
-  variable_set('node_options_place', array(0 => 'status'));
+  // These have multiple settings:
+  variable_set('node_options_article', array(0 => 'status', 1 => "revision", 2 => "revision_moderation"));
+  variable_set('node_options_event', array(0 => 'status', 1 => "revision", 2 => "revision_moderation"));
+  variable_set('node_options_place', array(0 => 'status', 1 => "revision", 2 => "revision_moderation"));
+
+  // Default these to just not be promoted:
   variable_set('node_options_organization', array(0 => 'status'));
+  variable_set('node_options_person', array(0 => 'status'));
 
   // Vertical Tabs Default settings
   variable_set('vertical_tabs_default_tab_article', "Basic details");
@@ -26,75 +28,23 @@
   $theme_settings['toggle_node_info_organization'] = FALSE;
   variable_set('theme_settings', $theme_settings);
 
-  // Field weight settings.
-  // Looks like Strongarm might take care of this?
-/**
-$article = 
-array
-(
-    'title' => -5,
-    'body_field' => -4,
-    'revision_information' => 5,
-    'author' => 4,
-    'options' => 6,
-    'menu' => 3,
-    'path' => 7,
-);
+  // Some revision/diff/etc. settings.
+  variable_set('enable_revisions_page_article', 1);
+  variable_set('enable_revisions_page_event', 1);
+  variable_set('enable_revisions_page_place', 1);
 
-$event =
-array
-(
-    'title' => -5,
-    'body_field' => -4,
-    'revision_information' => 7,
-    'author' => 8,
-    'options' => 9,
-    'menu' => 6,
-    'path' => 10,
-);
+  variable_set('show_preview_changes_article', 1);
+  variable_set('show_preview_changes_event', 1);
+  variable_set('show_preview_changes_place', 1);
 
-$organization =
-array
-(
-    'title' => -5,
-    'body_field' => -4,
-    'revision_information' => 6,
-    'author' => 5,
-    'options' => 7,
-    'menu' => 4,
-    'path' => 8,
-);
+  variable_set('new_revisions_article', "0");
+  variable_set('new_revisions_event', "0");
+  variable_set('new_revisions_place', "0");
 
-$person =
-array
-(
-    'title' => -5,
-    'body_field' => -4,
-    'revision_information' => 6,
-    'author' => 5,
-    'options' => 7,
-    'menu' => 4,
-    'path' => 8,
-);
+  variable_set('revisioning_auto_publish_article', 0);
+  variable_set('revisioning_auto_publish_event', 0);
+  variable_set('revisioning_auto_publish_place', 0);
 
-$place = 
-array
-(
-    'title' => -1,
-    'body_field' => 10,
-    'revision_information' => 11,
-    'author' => 12,
-    'options' => 13,
-    'menu' => 9,
-    'path' => 14,
-);
-
-  variable_set('content_extra_weights_article', $article);
-  variable_set('content_extra_weights_event', $event);
-  variable_set('content_extra_weights_organization', $organization);
-  variable_set('content_extra_weights_person', $person);
-  variable_set('content_extra_weights_place', $place);
-**/
   // Content Profile settings.
   variable_set("content_profile_use_person", 1);
   variable_set("content_profile_use_organization", 1);

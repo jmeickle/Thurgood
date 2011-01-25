@@ -292,6 +292,9 @@ variable_set('vertical_tabs_default', 1);
 variable_set('vertical_tabs_minimum', 1);
 variable_set('vertical_tabs_node_type_settings', 0);
 
+// Quicktabs settings
+variable_set('quicktabs_tabstyle', "Sky");
+
 // Pathauto settings
 variable_set('pathauto_node_pattern', '[type]/[title-raw]');
 variable_set('pathauto_reduce_ascii', 1);
