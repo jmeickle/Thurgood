@@ -112,7 +112,8 @@ function thurgood_profile_modules() {
     'openlayers_views',
     'openlayers_geocoder',
 
-    // (STUB) panels.make
+    // panels.make
+    'panels',
 
     // search.make
     'faceted_search',
