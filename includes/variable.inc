@@ -23,7 +23,7 @@ variable_set('theme_settings', array(
     'toggle_logo' => 0,
     'toggle_name' => 1,
     'toggle_slogan' => 0,
-    'toggle_mission' => 1,
+    'toggle_mission' => 0,
     'toggle_node_user_picture' => 0,
     'toggle_comment_user_picture' => 0,
     'toggle_search' => 0,
