@@ -53,7 +53,6 @@ function thurgood_profile_modules() {
     // basic.make
     'content_profile',
     'content_profile_tokens',
-    'content_profile_registration',
 // Installed later because they depend on Ctools.
 //    'context',
 //    'context_layouts',
