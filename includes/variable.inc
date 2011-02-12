@@ -109,10 +109,10 @@ $fs_env_settings = array(
   $fs_filters_query = "
   INSERT INTO `faceted_search_filters` (`env_id`, `filter_key`, `filter_id`, `status`, `weight`, `sort`, `max_categories`) VALUES
 (1, 'node', 'keyword', 1, -999, '', 0),
-(1, 'taxonomy', '1', 1, 2, 'term', 0),
+(1, 'taxonomy', '1', 1, 4, 'term', 0),
 (1, 'taxonomy', '2', 1, 1, 'term', 0),
 (1, 'taxonomy', '3', 1, 3, 'term', 0),
-(1, 'taxonomy', '4', 1, -8, 'term', 0)
+(1, 'taxonomy', '4', 1, 2, 'term', 0)
   ";
 
   db_query($fs_filters_query);
