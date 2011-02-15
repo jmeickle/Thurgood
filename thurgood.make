@@ -19,8 +19,8 @@ includes[cck] = "makefiles/cck.make"
 ; Geospatial modules.
 includes[geo] = "makefiles/geo.make"
 
-; (STUB) Panels and related modules.
-;includes[panels] = "makefiles/panels.make"
+; Panels and related modules.
+includes[panels] = "makefiles/panels.make"
 
 ; Search improvement modules.
 includes[search] = "makefiles/search.make"
