@@ -12,7 +12,7 @@ variable_set('logintoboggan_redirect_on_register', "");
 variable_set('logintoboggan_login_with_email', "1");
 variable_set('logintoboggan_minimum_password_length', "8");
 variable_set('logintoboggan_override_destination_parameter', 1);
-variable_set('logintoboggan_pre_auth_role', "11");
+variable_set('logintoboggan_pre_auth_role', "10");
 variable_set('logintoboggan_purge_unvalidated_user_interval', "604800");
 variable_set('logintoboggan_redirect_on_confirm', "");
 
