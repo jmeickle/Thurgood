@@ -1,23 +1,29 @@
 <?php
 
-// Basic site information
+// Note that this stuff can override what was set in the installation process!
+
+// Basic site information:
 variable_set('site_footer', 'This website was developed by the <a href="http://www.ccsu.edu/imrp">Institute for Municipal and Regional Policy</a> at <a href="http://www.ccsu.edu">Central Connecticut State University</a> using <a href="http://github.com/Eronarn/Thurgood">Thurgood</a>, a custom installation profile for <a href="http://drupal.org">Drupal</a>.');
-// Don't have anything here yet.
-// variable_set('site_frontpage', 'home');
 variable_set('site_mail', 'eronarn@gmail.com');
 variable_set('site_mission', 'Welcome to the homepage of the Connecticut Reentry Roundtable Collaborative.');
 variable_set('site_name', 'Connecticut Reentry Roundtable Collaborative');
 variable_set('site_offline_message', "The Connecticut Reentry Roundtable Collaborative's website is currently offline for maintenance. Our apologies for the interruption.");
+variable_set('site_slogan', 'Because the underserved aren't undeserving.');
 
-variable_set('site_slogan', 'If we had a slogan it would go here.');
+// Notification settings.
+variable_set('update_check_frequency', "1");
+variable_set('update_notification_threshold', "all");
+variable_set('update_notify_emails', array(0 => "eronarn@gmail.com"));
 
-// Core settings.
+// Core node settings.
+// Don't have anything here yet.
+// variable_set('site_frontpage', 'home');
 variable_set('default_nodes_main', "5");
 variable_set('node_preview', "0");
 variable_set('teaser_length', "200");
 
 // Having the Search region active breaks OL Geocoder,
-// so we disable it here.
+// so we disable it here. (Also do other theme settings.)
 
 variable_set('theme_settings', array(
     'toggle_logo' => 0,
