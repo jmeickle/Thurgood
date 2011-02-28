@@ -62,6 +62,61 @@ variable_set('openlayers_default_preset', 'thurgood_form');
 // Google Maps API key. Obviously, this depends on your domain!
 variable_set('openlayers_layers_google_api', 'ABQIAAAAYxy6rrenR0GtIuGHI9I35BS31JS7lLTyVkZkrmJvmWOn6proUxQh9Z_wcnDGfs4-wuC02ZFkd997uQ');
 
+// Google Analytics settings. Again, this is tied to domain!
+variable_set('googleanalytics_account', "UA-15311544-3");
+variable_set('googleanalytics_cache', 0);
+variable_set('googleanalytics_codesnippet_after', "0");
+variable_set('googleanalytics_codesnippet_before', "0");
+variable_set('googleanalytics_custom', "0");
+
+variable_set('googleanalytics_custom_var',
+// Just uses the default settings, so leaving it unserialized rather than expanding it to an array.
+unserialize('a:1:{s:5:"slots";a:5:{
+i:1;a:4:{s:4:"slot";i:1;s:4:"name";s:0:"";s:5:"value";s:0:"";s:5:"scope";s:1:"3";}
+i:2;a:4:{s:4:"slot";i:2;s:4:"name";s:0:"";s:5:"value";s:0:"";s:5:"scope";s:1:"3";}
+i:3;a:4:{s:4:"slot";i:3;s:4:"name";s:0:"";s:5:"value";s:0:"";s:5:"scope";s:1:"3";}
+i:4;a:4:{s:4:"slot";i:4;s:4:"name";s:0:"";s:5:"value";s:0:"";s:5:"scope";s:1:"3";}
+i:5;a:4:{s:4:"slot";i:5;s:4:"name";s:0:"";s:5:"value";s:0:"";s:5:"scope";s:1:"3";}
+}}')
+);
+
+variable_set('googleanalytics_pages',"
+admin
+
+admin/*
+
+user/*/*
+
+node/add*
+
+node/*/*
+");
+
+variable_set('googleanalytics_roles', array(
+1 => 0,
+2 => 0,
+3 => 0,
+4 => 0,
+5 => 0,
+6 => 0,
+7 => 0,
+8 => 0,
+9 => 0,
+10 => 0,
+11 => 0
+));
+
+variable_set('googleanalytics_site_search', 1);
+variable_set('googleanalytics_trackadsense', 0);
+variable_set('googleanalytics_tracker_anonymizeip', 0);
+variable_set('googleanalytics_trackfiles', 1);
+variable_set('googleanalytics_trackfiles_extensions', "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip";');
+variable_set('googleanalytics_trackmailto', 1);
+variable_set('googleanalytics_trackoutboundaspageview', 0);
+variable_set('googleanalytics_trackoutgoing', 1);
+variable_set('googleanalytics_visibility', "0");
+variable_set('googleanalytics_visibility_roles', "0");
+
 // Location of local OpenLayers.js file. Not currently used.
 // variable_set(' ', 'http://ctreentry.info/OpenLayers.js');
 
