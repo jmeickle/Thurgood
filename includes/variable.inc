@@ -22,6 +22,14 @@ variable_set('default_nodes_main', "5");
 variable_set('node_preview', "0");
 variable_set('teaser_length', "200");
 
+// Filter settings.
+variable_set('allowed_html_1', "<a> <i> <em> <b> <strong> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd>");
+variable_set('filter_html_1', "1");
+variable_set('filter_html_help_1', 1);
+variable_set('filter_html_nofollow_1', 0);
+variable_set('filter_url_length_1', "72");
+variable_set('format', "1");
+
 // Having the Search region active breaks OL Geocoder,
 // so we disable it here. (Also do other theme settings.)
 
