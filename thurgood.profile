@@ -141,7 +141,6 @@ function thurgood_profile_modules() {
     'advanced_help',
     'better_formats',
     'cmf',
-    'custom_breadcrumbs',
     'hierarchical_select',
     'hs_content_taxonomy',
     'hs_taxonomy',
