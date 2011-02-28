@@ -131,7 +131,7 @@ function thurgood_profile_modules() {
 //    'nodewords',
     'pathauto',
     'pathauto_persist',
-    'page_title',
+//    'page_title',
 //    'xmlsitemap',
 
     // ui.make
