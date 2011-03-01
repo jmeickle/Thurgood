@@ -8,7 +8,7 @@ variable_set('site_mail', 'eronarn@gmail.com');
 variable_set('site_mission', 'Welcome to the homepage of the Connecticut Reentry Roundtable Collaborative.');
 variable_set('site_name', 'Connecticut Reentry Roundtable Collaborative');
 variable_set('site_offline_message', "The Connecticut Reentry Roundtable Collaborative's website is currently offline for maintenance. Our apologies for the interruption.");
-variable_set('site_slogan', 'Because the underserved aren't undeserving.');
+variable_set('site_slogan', 'Because the underserved aren\'t undeserving.');
 
 // Notification settings.
 variable_set('update_check_frequency', "1");
