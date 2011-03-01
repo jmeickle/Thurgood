@@ -110,7 +110,7 @@ variable_set('googleanalytics_site_search', 1);
 variable_set('googleanalytics_trackadsense', 0);
 variable_set('googleanalytics_tracker_anonymizeip', 0);
 variable_set('googleanalytics_trackfiles', 1);
-variable_set('googleanalytics_trackfiles_extensions', "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip";');
+variable_set('googleanalytics_trackfiles_extensions', "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip");
 variable_set('googleanalytics_trackmailto', 1);
 variable_set('googleanalytics_trackoutboundaspageview', 0);
 variable_set('googleanalytics_trackoutgoing', 1);
