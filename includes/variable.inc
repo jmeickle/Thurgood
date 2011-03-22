@@ -128,6 +128,9 @@ variable_set('googleanalytics_visibility_roles', "0");
 // Location of local OpenLayers.js file. Not currently used.
 // variable_set(' ', 'http://ctreentry.info/OpenLayers.js');
 
+// Performance settings
+variable_set('preprocess_css', "1");
+
 // Date settings
 variable_set('date_db_tz_support', 0);
 variable_set('date_default_timezone', -14400);
@@ -146,7 +149,7 @@ variable_set('search_cron_limit', 200);
 
 // Faceted Search environment settings.
 $fs_env_settings = array(
-    'title' => 'Resource Search',
+    'title' => 'Place Search',
     'ignore_status' => 1,
     'types' => array
         (
