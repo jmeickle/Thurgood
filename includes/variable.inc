@@ -5,10 +5,18 @@
 // Basic site information:
 variable_set('site_footer', 'This website was developed by the <a href="http://www.ccsu.edu/imrp">Institute for Municipal and Regional Policy</a> at <a href="http://www.ccsu.edu">Central Connecticut State University</a> using <a href="http://github.com/Eronarn/Thurgood">Thurgood</a>, a custom installation profile for <a href="http://drupal.org">Drupal</a>.');
 variable_set('site_mail', 'eronarn@gmail.com');
-variable_set('site_mission', 'Welcome to the homepage of the Connecticut Reentry Roundtable Collaborative.');
 variable_set('site_name', 'Connecticut Reentry Roundtable Collaborative');
-variable_set('site_offline_message', "The Connecticut Reentry Roundtable Collaborative's website is currently offline for maintenance. Our apologies for the interruption.");
+variable_set('site_offline_message', "The Connecticut Reentry Roundtable Collaborative website is currently offline for maintenance. Our apologies for the interruption.");
 variable_set('site_slogan', 'Because the underserved aren\'t undeserving.');
+
+$mission = '
+<p><strong>Welcome to the online home of the Statewide Reentry Roundtable Collaborative of Connecticut.</strong><p>
+<p>We\'ve come together at this site with the goal of making reentry information more accessible to everyone in our communities. The website is always improving, but you can <a href="http://ctreentry.info/place/search">view our current resource listings using the site search.</a></p>
+<p>Want to add your own resources to our database? You\'ll need an account first - <a href="http://ctreentry.info/user/register">you can make one here.</a> Logged in users have access to the <a href="http://ctreentry.info/dashboard">Dashboard</a> and can post resources, events, and news related to reentry.</p>
+<p>Have any questions or comments? We\'d love to hear from you, so <a href="http://ctreentry.info/contact">please get in touch with us.</a></p>
+';
+
+variable_set('site_mission', $mission);
 
 // Notification settings.
 variable_set('update_check_frequency', "1");
