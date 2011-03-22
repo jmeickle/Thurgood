@@ -10,6 +10,7 @@ projects[context][subdir] = "contrib"
 projects[features][subdir] = "contrib"
 
 ; API modules
+projects[calendar][subdir] = "contrib"
 projects[ctools][subdir] = "contrib"
 projects[date][subdir] = "contrib"
 projects[features][subdir] = "contrib"
