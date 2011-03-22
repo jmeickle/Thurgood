@@ -176,6 +176,7 @@ function thurgood_profile_modules() {
     // features.make
     'thurgood_custom_module',
     'thurgood_feature',
+    'thurgood_conf_feature',
   );
 }
  
