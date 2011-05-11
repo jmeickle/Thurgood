@@ -18,7 +18,7 @@ $mission = '
 
 variable_set('site_mission', $mission);
 
-// Notification settings.
+// Core notification settings.
 variable_set('update_check_frequency', "1");
 variable_set('update_notification_threshold', "all");
 variable_set('update_notify_emails', array(0 => "eronarn@gmail.com"));
@@ -62,6 +62,37 @@ variable_set('theme_settings', array(
     'favicon_path' => '',
     'favicon_upload' => '',
 ));
+
+// Messaging settings.
+variable_set('messaging_default_filter', '3');
+variable_set('messaging_default_method', 'mail');
+variable_set('messaging_log', '9676800');
+variable_set('messaging_process_limit', 'a:3:{s:7:"message";s:1:"0";s:4:"time";s:1:"0";s:7:"percent";s:1:"0";}');
+variable_set('messaging_returnpath_mail', '[site-mail]');
+variable_set('messaging_sender_mail', '[mail]');
+variable_set('messaging_sender_name', '[user]');
+
+// Notifications settings.
+
+variable_set('notifications_content_per_type', '0');
+variable_set('notifications_content_type', 'a:5:{s:8:"taxonomy";s:8:"taxonomy";s:6:"thread";s:6:"thread";s:8:"nodetype";s:8:"nodetype";s:6:"author";i:0;s:10:"typeauthor";i:0;}');
+variable_set('notifications_default_send_interval', 86400);
+variable_set('notifications_digest_methods', 'a:3:{i:0;s:0:"";i:86400;s:4:"long";i:604800;s:4:"long";}');
+variable_set('notifications_log', "9676800");
+variable_set('notifications_process_limit', 'a:4:{s:3:"row";s:1:"0";s:7:"message";s:1:"0";s:4:"time";s:1:"0";s:7:"percent";s:1:"0";}');
+variable_set('notifications_process_on_cron', 1);
+variable_set('notifications_sender', "0");
+variable_set('notifications_sendself', 0);
+variable_set('notifications_send_immediate', 1);
+variable_set('notifications_send_intervals', 'a:3:{i:0;s:36:"Separate email for each notification";i:86400;s:18:"Daily email digest";i:604800;s:19:"Weekly email digest";}');
+variable_set('notifications_tags_showsubscribed', 0);
+variable_set('notifications_tags_vocabularies', 'a:4:{i:3;i:3;i:2;i:2;i:4;i:4;i:1;i:1;}');
+variable_set('notifications_ui_account_options', 'a:2:{s:5:"links";s:5:"links";s:5:"block";s:5:"block";}');
+variable_set('notifications_ui_node', 'a:6:{s:5:"links";s:5:"links";s:4:"form";i:0;s:7:"comment";i:0;s:11:"teaserlinks";i:0;s:7:"subform";i:0;s:5:"block";i:0;}');
+variable_set('notifications_ui_per_type', "0");
+variable_set('notifications_ui_types', 'a:5:{s:6:"thread";s:6:"thread";s:8:"taxonomy";i:0;s:8:"nodetype";i:0;s:6:"author";i:0;s:10:"typeauthor";i:0;}');
+variable_set('notifications_ui_user', 'a:2:{s:4:"page";s:4:"page";s:6:"create";s:6:"create";}');
+
 
 // OpenLayers settings.
 // Default preset is the same one used on the node editing page.
