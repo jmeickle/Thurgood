@@ -19,6 +19,9 @@ includes[cck] = "makefiles/cck.make"
 ; Geospatial modules.
 includes[geo] = "makefiles/geo.make"
 
+; User interactions: Messaging, Notifications, and Flag.
+includes[interaction] = "makefiles/interaction.make"
+
 ; Panels and related modules.
 includes[panels] = "makefiles/panels.make"
 

@@ -115,6 +115,19 @@ function thurgood_profile_modules() {
     'openlayers_views',
     'openlayers_geocoder',
 
+    // interaction.make
+    'flag',
+    'flag_actions',
+    'flag_note',
+    'messaging',
+    'messaging_mail',
+    'notifications_content',
+    'notifications',
+    'notifications_rules',
+    'notifications_ui',
+    'notifications_views',
+    'notifications_tags',
+
     // panels.make
     'panels',
 
