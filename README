@@ -15,3 +15,12 @@ Thurgood
    WHY:   Because underserved populations aren't undeserving.
 
    HOW:   Built with Drupal, but built from support and generosity.
+
+Notes
+--------
+
+   See the 'thurgood_misc' repo for a script that will install the necessary code.
+
+   The installation also requires a SQL dump of site settings. This is in the same repo.
+
+   Contact eronarn@gmail.com if you want to learn more about the project.
