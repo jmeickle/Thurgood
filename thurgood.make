@@ -50,5 +50,5 @@ includes[features] = "makefiles/features.make"
 includes[themes] = "makefiles/themes.make"
 
 ; Contrib patches:
-
-; Nothing yet.
+; My own patch for Flag Note to change some settings I dislike.
+projects[flag_note][patch][] = "https://github.com/Eronarn/thurgood_misc/raw/master/flag_note.patch"
