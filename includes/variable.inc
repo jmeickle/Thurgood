@@ -73,7 +73,6 @@ variable_set('messaging_sender_mail', '[mail]');
 variable_set('messaging_sender_name', '[user]');
 
 // Notifications settings.
-
 variable_set('notifications_content_per_type', '0');
 variable_set('notifications_content_type', 'a:5:{s:8:"taxonomy";s:8:"taxonomy";s:6:"thread";s:6:"thread";s:8:"nodetype";s:8:"nodetype";s:6:"author";i:0;s:10:"typeauthor";i:0;}');
 variable_set('notifications_default_send_interval', 86400);
@@ -92,7 +91,6 @@ variable_set('notifications_ui_node', 'a:6:{s:5:"links";s:5:"links";s:4:"form";i
 variable_set('notifications_ui_per_type', "0");
 variable_set('notifications_ui_types', 'a:5:{s:6:"thread";s:6:"thread";s:8:"taxonomy";i:0;s:8:"nodetype";i:0;s:6:"author";i:0;s:10:"typeauthor";i:0;}');
 variable_set('notifications_ui_user', 'a:2:{s:4:"page";s:4:"page";s:6:"create";s:6:"create";}');
-
 
 // OpenLayers settings.
 // Default preset is the same one used on the node editing page.
