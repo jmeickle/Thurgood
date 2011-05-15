@@ -7,4 +7,6 @@ core = 6.x
 projects[pathauto][subdir] = "contrib"
 projects[pathauto_persist][subdir] = "contrib"
 ; projects[page_title][subdir] = "contrib"
+projects[subpath_alias][subdir] = "contrib"
+projects[url_alter][subdir] = "contrib"
 ; projects[xmlsitemap][subdir] = "contrib"
