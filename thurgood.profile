@@ -149,8 +149,8 @@ function thurgood_profile_modules() {
     'pathauto',
     'pathauto_persist',
 //    'page_title',
-    'subpath_alias',
-    'url_alter',
+//    'subpath_alias',
+//    'url_alter',
 //    'xmlsitemap',
 
     // ui.make
@@ -293,7 +293,7 @@ function thurgood_profile_tasks(&$task, $url) {
 
     // First, we need to install some modules that would break the normal install hook.
     module_rebuild_cache();
-    drupal_install_modules(array('strongarm', 'modalframe', 'reverse_node_reference', 'context', 'context_layouts', 'context_ui'));
+    drupal_install_modules(array('strongarm', 'modalframe', 'reverse_node_reference', 'context', 'context_layouts', 'context_ui', 'subpath_alias', 'url_alter'));
 
     // By now, all modules are installed.
 
