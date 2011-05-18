@@ -49,6 +49,6 @@
   variable_set("content_profile_use_person", 1);
   variable_set("content_profile_use_organization", 1);
 
-  variable_set('content_profile_person', 'a:5:{s:6:"weight";s:1:"0";s:12:"user_display";s:1:"0";s:9:"edit_link";i:0;s:8:"edit_tab";s:3:"top";s:8:"add_link";i:1;}');
-  variable_set('content_profile_organization', 'a:5:{s:6:"weight";s:1:"0";s:12:"user_display";s:1:"0";s:9:"edit_link";i:0;s:8:"edit_tab";s:3:"top";s:8:"add_link";i:1;}');
+  variable_set('content_profile_person', unserialize('a:5:{s:6:"weight";s:1:"0";s:12:"user_display";s:1:"0";s:9:"edit_link";i:0;s:8:"edit_tab";s:3:"top";s:8:"add_link";i:1;}'));
+  variable_set('content_profile_organization', unserialize('a:5:{s:6:"weight";s:1:"0";s:12:"user_display";s:1:"0";s:9:"edit_link";i:0;s:8:"edit_tab";s:3:"top";s:8:"add_link";i:1;}'));
 ?>
